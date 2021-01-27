@@ -1,0 +1,923 @@
+<html>
+
+<head>
+
+<style type="text/css">
+
+.quoteStyle {
+
+  		font: 48px/68px italic Arial, sans serif;
+  		padding: 20px;
+  		background-color: #faebbc;
+  		border-top: 1px solid #e1cc89;
+  		border-bottom: 1px solid #e1cc89;
+  		margin: 5px;
+ 		background-image: url('scroll2.jpg');
+  		background-position: top left;
+  		background-repeat: no-repeat;
+		background-size: 200%;
+  		text-indent: 0px;
+		text-top: 350px;
+
+
+		position:absolute;
+		left:50px;
+		top: 350px;
+		right:50px;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<style>h1{font-size: 48pt;} </style>
+ 
+<h1> Words of Wisdom </h1>
+
+ <form name=searchq>
+   <input type=text style= font-size:48px size=12 name=searchtext>
+			&nbsp&nbsp&nbsp;
+   <input type=button style= font-size:48px value="Next Quote" onClick="lookforit ();">  	
+			  
+</form>
+
+
+ 
+  <form name=apple>
+   <input type=button style= font-size:48px value="Update Quote" onClick="renderQuote ();">  
+	<font size=6>&nbsp &nbsp Enter Quote#</font>
+   <input type=text style= font-size:48px size=5 name=banana>
+  </form>
+ 
+
+<div id="quoteDisplay" class="quoteStyle"></div>
+
+<script type="text/javascript" language="javascript">
+
+
+x = 367;
+		var q = [];
+q[1] = "He looks for faith in the Dark not success in the limelight. ";
+q[2] = "Death is not a “dead end”.";
+q[3] = "He’s the Light of the world for the night of the world.";
+q[4] = "Prayer is our greatest need. ";
+q[5] = "We are created for relationships.";
+q[6] = "God is Life.";
+q[7] = "You are what you believe. ";
+q[8] = "Are you a person of the Book or a person of the times? ";
+q[9] = "To get close to each other, get close to Christ. ";
+q[10] = "We are His riches. ";
+q[11] = "What we believe about God is reflected in our character.";
+q[12] = "Sanctification is the process of making you a different person. ";
+q[13] = "Are you filling your gas tank with water?  ";
+q[14] = "You can complain so loudly that no one hears anymore, and all they remember about you is your complaining.  ";
+q[15] = "You won’t quit complaining until you have a reason not to complain--He is the reason not to complain. ";
+q[16] = "Prayer is the heart of living effectively.";
+q[17] = "The whole world has been bitten by sin.  Look to the cross to be healed. ";
+q[18] = "Stroke into the current don’t just drift with the flow.";
+q[19] = "We have the freedom to choose but we don’t choose the consequences.  ";
+q[20] = "You flirt, you fall.";
+q[21] = "Nibbling crosses over the line to sin.   It starts with inner desires.   It moves on to deception.   It produces disobedience.   It results in death (separation).";
+q[22] = "Are you a professor of faith or a possessor of Faith?  Real Faith is more than verbal, more than emotional, more than mental…it is observable.  ";
+q[23] = "God’s method of valuation does not use the World’s system of values.";
+q[24] = "You can’t ride the Temporal Train and the Eternal Train at the same time.  Not choosing results in an unproductive life of instability, anxiety and indecision. ";
+q[25] = "Stay close or you will wonder “why” all the time.";
+q[26] = "Hell is an eternity without God.";
+q[27] = "A hero gives his life. A victim loses his life.";
+q[28] = "Where there is hatred there is no healing.  ";
+q[29] = "The cross is intentional. He loves us. Stay close to the cross.";
+q[30] = "The Gentle Shepherd is our provision, protection and direction.";
+q[31] = "We are faithful not faultless. ";
+q[32] = "Do you do?";
+q[33] = "God is everywhere and always there. ";
+q[34] = "God is our refuge:  He will remove all other places of refuge. ";
+q[35] = "“Oh my God” should be a declaration of confidence.";
+q[36] = "What are you looking forward to?  What is your consuming passion? ";
+q[37] = "Faith is a heart-hold on God’s sovereignty and power. ";
+q[38] = "If you don’t pray you will fall into temptation.";
+q[39] = "When temptation comes knocking, send Jesus to the door.";
+q[40] = "Better to shun the bait than to struggle in the snare.";
+q[41] = "Is your faith “made” or “marred” in your leisure time?";
+q[42] = "Without restraint we would “do it all”.  That’s the human heart…";
+q[43] = "Your ability to fight depends upon the condition of your heart. ";
+q[44] = "Whatever gets your attention gets you.";
+q[45] = "Kindness is love in action.";
+q[46] = "The kind of food your mind devours determines the kind of person you become.  Don’t snack on poison (or junk food).  Mind your mind. ";
+q[47] = "God’s Word of Truth forms a barrier to temptation’s error.";
+q[48] = "There is nothing wrong with hunger but recognize your real hunger. ";
+q[49] = "Self-pity is NOT real repentance.";
+q[50] = "God never wastes hurts.";
+q[51] = "Kindness reproduces kindness. ";
+q[52] = "Be sensitive, genuine, sympathetic, supportive, and straightforward with your mate.  ";
+q[53] = "Frame your words carefully. Writing it down can help. State your values, state the issues and invite dialog.";
+q[54] = "What is your commitment built on?  Build it on the Rock.  The foundation for a storm-proof marriage is Jesus Christ. ";
+q[55] = "Are you going to “walk through” or “walk out”--“give up” or “grow up”?";
+q[56] = "War inside yields war outside.";
+q[57] = "Not “My Way”, not “Your Way”, not “No Way”, but “Our Way”.  Live a life of “steady goodness” to each other.";
+q[58] = "You can always choose your attitude.";
+q[59] = "Gentleness: When someone serves you, it is understanding not demanding.   When someone disappoints you, it is affirming not condemning.   When someone disagrees with you, it is listening without bristling.   When someone hurts you, it is acting without reacting.";
+q[60] = "Read, pray, discuss each day.";
+q[61] = "We can’t see our own blind spots.  We need each other to avoid self-deception.  ";
+q[62] = "Relax in God’s Plan. Remember God’s Presence. Rely on God’s Protection. Live in the Sanctuary of God.";
+q[63] = "Our culture is infatuated with Eros.  Beware of the culture you are living in:  Arrows of Eros--a continual downpour that causes erosion.  [Er-os, n.--Latin, Greek Eros, sexual love.]";
+q[64] = "You can be sure of your ultimate future. ";
+q[65] = "He can address your death problem because He addressed the death problem. ";
+q[66] = "Happiness is an inside job. ";
+q[67] = "You get what you give.   Be patient with those who are peculiar.   Forgive those who have fallen.   Help those who are hurting.   Do good to your enemies.";
+q[68] = "Gain quickly/lose quickly.";
+q[69] = "Living abundantly comes from giving abundantly.";
+q[70] = "God works through our faith not our flesh. ";
+q[71] = "He's not just the supplier of bread, He is the Bread.";
+q[72] = "If God can use a donkey he can use me!";
+q[73] = "The key to making your life an adventure is Risk.  Your life can take on a spirit of adventure, not by creating risks but by learning to live by faith.  Faith is security and an adventure. ";
+q[74] = "God’s provision fits your need, not your greed.  Your real needs depend on your reason for being!";
+q[75] = "There is no such thing as “constructive” criticism.";
+q[76] = "Seek, pray, obey and fill the cups of others.";
+q[77] = "He is both Judge and Father.";
+q[78] = "If you obey you will have an impact for God.  ";
+q[79] = " Pride grows rampantly in the soil of 'success'.  ";
+q[80] = "We fear many things in life.  Do we fear failing Christ?";
+q[81] = "Escape into ultimate reality, not virtual reality.";
+q[82] = "Your Father is at the controls.";
+q[83] = "Confidence rooted in faith in God is right and good.  Confidence rooted only in oneself leads to pride.";
+q[84] = "Remember His sacrifice for us not our efforts for Him.  ";
+q[85] = "It is not what we believe but whom we believe. ";
+q[86] = "Choose to be informed by God’s Word daily--because the Word is so good. ";
+q[87] = "Give so others will receive God’s gift.  ";
+q[88] = "All relationships depend on the strength of our relationship with God. ";
+q[89] = "Remember the best/forget the rest, choose to be grateful for God’s work in others.  Then people will be on your heart, not on your nerves.  Take time to say, 'Hey, I like that about you…'";
+q[90] = "People are shaped by the expectations we have for them.";
+q[91] = "When you care you listen better.";
+q[92] = "Say the right things, pray the right things.";
+q[93] = "It is one thing to win a debate, it is another thing to win a heart.  ";
+q[94] = "The purpose of the Body of Christ is to enable others to come to Him. ";
+q[95] = "Mind your mouth.  What’s in there will come out.   ";
+q[96] = "The only safe place to be is in the hands of God.  ";
+q[97] = "Failure is on the path of least persistence.";
+q[98] = "Its never too late to start over. God makes you a new person, grants you new freedom and gives you a new view.";
+q[99] = "The more we look at Him the more we change how we view ourselves and others.";
+q[100] = "There will always be mystery about God’s ways.  There will always be certainty about God’s character.";
+q[101] = "When it is dark and you need to find your way, turn on your light and turn to the Light.";
+q[102] = "Scripture says, ”work out your salvation”.  It does not say “work for” your salvation.  Work out what God is working in you.  Strengthen it with right actions and right attitudes.  ";
+q[103] = "We “do good” in this world because it is a reflection of God’s redemptive plan in the spiritual world.";
+q[104] = "In the moment of weakness do you “do” first or pray first?  Pray first.";
+q[105] = "Square what you do with what you believe.";
+q[106] = "Self-denial is helpful but the next level is self-sacrifice. ";
+q[107] = "Can you separate the important from the trivial?";
+q[108] = "The Rat Race:  We buy what we don’t need with money we don’t have to impress people we don’t even know.  What are you giving your life to?";
+q[109] = "Commitment before comfort.   Passion not passivity.   People-profit before personal-profit.   Character before career.   Perspective before politics.   Service before security.   That’s God’s Man.  God’s Man and a man’s man should be the same man.";
+q[110] = "'Success' takes direction, discipline and drive.  Are you climbing or drifting? ";
+q[111] = "God assigns us to circumstances that will grow us.";
+q[112] = "Pause and wonder.  Contemplate in awe His mighty works. ";
+q[113] = "The question is not will you, but when will you acknowledge Him as Lord?";
+q[114] = "When you’re grumbling you’re not believing.  Listen to His Word and believe!";
+q[115] = "Faith is not the operative, God is.";
+q[116] = "What the heart raises the mouth praises.";
+q[117] = "A real hero:  Walks with integrity,  Works at harmony,  Considers another’s feelings,  Is open to reason,  Is ready to assume the best and do the needful,  And wears no masks.";
+q[118] = "Do you have a “have to” or a “want to” heart?  What does your heart look like to God?   Only God can change your heart.";
+q[119] = "When all seems to be going wrong defer to God’s sovereignty and love.  ";
+q[120] = "When you can’t understand God’s hand; understand His heart.";
+q[121] = "Wake up now!  It would be an awful thing at the end of your Christian life to have nothing to show for all the years of suffering the consequences of forgiven sin:  No deepened humility.  No closer walk with God.  No increased usability.  Just age. ";
+q[122] = "Pain is God’s megaphone.  ";
+q[123] = "For the Christian, endurance always makes sense because of what will be, not because of what might be.";
+q[124] = "Faith is the ability to wait…";
+q[125] = "Prayer is the “power plug” to God.  Why do we do so much without praying?";
+q[126] = "Don’t worry; ask.  ";
+q[126] = "Worry changes us negatively.  ";
+q[126] = "It chokes out His promises.  ";
+q[126] = "Prayer changes us positively.  It brings to mind His promises.";
+q[127] = "God aggressively pursues us with His goodness.";
+q[128] = "When you’re full of despair do you want good advice or good news about your situation?  The Bible is full of good advice but the main message of the Bible is Good News.";
+q[129] = "Jesus came to die, not to become a great moral teacher.";
+q[130] = "Live for the World or live for God.  Choose.";
+q[131] = "Unbelief surfaces the voice of Hell.  What voice will you choose to believe?";
+q[132] = "Be ready everyday to face our Holy God. ";
+q[133] = "God leads His people by testing.  God tests us with problems.  Why?  To reveal our true character.  To show us what is truly in our hearts.";
+q[134] = "A big lighthouse without a light is worse than nothing.";
+q[135] = "Kindness flows from a clean heart. ";
+q[136] = "When God looks into your heart, what does He see?";
+q[137] = "There is no future in evil, only in good.";
+q[138] = "Is your life an open book?";
+q[139] = "There is no joy in the life of the legalist.  All doctrine needs to be seasoned with grace.  ";
+q[140] = "Idolatry:  When people pool their ignorance to form an image of God.";
+q[141] = "We are at war until the return of our King.";
+q[142] = "Finish well.  He is with you.";
+q[143] = "Jude 10-13  But these men revile the things which they do not understand; and the things which they know by instinct, like unreasoning animals, by these things they are destroyed.  Woe to them!  For they have gone the way of Cain...These are the men who are hidden reefs in your love feasts when they feast with you without fear, caring for themselves; clouds without water, carried along by winds; autumn trees without fruit, doubly dead, uprooted; wild waves of the sea, casting up their own shame like foam; wandering stars, for whom the black darkness has been reserved forever. ";
+q[143] = "When moral values are supplanted by “community standards” social chaos results.  Self becomes the measure of all things.  Death, despair, and cynicism reign.  God is no longer a part of our decision making process.  People are used instead of loved.  Do not go the Way of Cain.  ";
+q[144] = "Your body will fail you but God won’t. ";
+q[145] = "What you need most doesn’t depend on you, but on God.  What you fear most won’t happen to you, without God.  ";
+q[146] = "Why is it that we cannot get used to “being an accident”?  Because we’re creations not accidents.";
+q[147] = "Spectator or Player:  Which are you?";
+q[148] = "Redirecting our attention away from God enslaves us.  ";
+q[149] = "Know God; know who you are.  ";
+q[150] = "Your life is not what happens to you but what happens in you.";
+q[151] = "The end of life is not the end of you.";
+q[152] = "The seen part of reality is not all of reality.";
+q[153] = "What do I fear most?  Losing heart.  My heart is my greatest enemy and God is my greatest good.";
+q[154] = "Speak the truth, cost what it may.";
+q[155] = "If He were visibly with you, how would that change you? ";
+q[156] = "The end of your resources is not the end of your Father’s supply. ";
+q[157] = "God is intolerant of that which would destroy us.";
+q[158] = "Focus on the family but don’t lose your focus on God. ";
+q[159] = "Would you buy a season ticket to church? ";
+q[160] = "Do you have a holy spirit, controlled by the Holy Spirit? ";
+q[161] = "Speak words of Life.";
+q[162] = "Who has the greatest trouble telling you the truth?  You.";
+q[163] = "Take heed that your tongue doesn’t cut your throat.";
+q[164] = "A good listener is a good speaker.";
+q[165] = "The less said, the less sin.";
+q[166] = "We cannot overcome temptation alone.";
+q[167] = "God answers our prayers in a way that’s better than we know how to ask.";
+q[168] = "You have a choice:  Bitterness or Prayer.  The bitter road or the better road.";
+q[169] = "Jesus prayed—long and often.";
+q[170] = "You have God’s attention.  Does He have yours?";
+q[171] = "God is a threat to “ourselves”.";
+q[172] = "Worship is not a mood, it is focusing your mind on God.";
+q[173] = "Mindless worship is meaningless worship.  Heartless worship is worthless worship.";
+q[174] = "What do you put ahead of God? ";
+q[175] = "Worship is relating to God rightly.  Fellowship is relating to one another rightly.";
+q[176] = "Church is not a place.  Its where you belong and relate to one another.  ";
+q[177] = "Self-esteem arises out of service.";
+q[178] = "Job’s lasting contribution was not his material success.";
+q[179] = "Prayer is drawing close to Him. ";
+q[180] = "Come to Him with reality not ritual.   ";
+q[181] = "Are you making a god out of what you’ve made?";
+q[182] = "Jesus gives God a face. ";
+q[183] = "Truly freed people do not want to return to slavery.";
+q[184] = "You will not be victorious without the Holy Spirit.  Evil keeps us from God.  The Holy Spirit keeps us from evil.";
+q[185] = "Grace silences conflict.  Where there is grace there is peace.  Peace with each other and peace with God.  ";
+q[186] = "Things endure because of someone’s sacrifice.  We have freedom in this country because many gave--some with their lives.  We have Eternal Freedom because of the Gospel—Christ’s sacrifice for us.";
+q[187] = "Everyone experiences grace at some level.  We can do nothing to earn the sunrise, the air we breath or the water that refreshes the earth.  Why is it so hard to accept God’s grace?";
+q[188] = "When you’ve got it all, all is not enough. ";
+q[189] = "We have a longing for eternity in our hearts that only God can fill.";
+q[190] = "Death and dying are the ultimate loss of control.  That is why so many fear death.  ";
+q[191] = "Preparation makes all the difference.  Are you prepared? ";
+q[192] = "Our greatest need is not wellness, its forgiveness.";
+q[193] = "Your greatest danger ultimately is not death, its hell. ";
+q[194] = "What is better?  News about Jesus or news from Jesus.";
+q[195] = "The Good News is not documentation, it’s a message written to you and for you.";
+q[196] = "The Body of Christ:  They need you and you need them. ";
+q[197] = "Cleanse me. Crucify me. Control me.";
+q[198] = "Idolatry is anything you indulge in to help you cope. ";
+q[199] = "Criticism lingers.  Complements do not.  ";
+q[200] = "The Bible:  This book will keep you from sin or sin will keep you from this book.";
+q[201] = "We are a building.  Built and continuing to be built upon by the creator of Heaven and Earth.  Let your spiritual house be a place of spiritual sacrifices of prayer and praise.";
+q[202] = "God’s desire is not judgment but the redemption of sinners. ";
+q[203] = "You can say whatever you want but not without a cost.";
+q[204] = "No one on earth can give everlasting hope.";
+q[205] = "God leads us by continually testing our faith.  He looks for obedience in success and in the problems we face. ";
+q[206] = "The purpose of prayer is not just to get an answer.  It opens up heaven and allows us to see the character of God.";
+q[207] = "There is no such thing as happiness and peace apart from God. ";
+q[208] = "God is at work for good every day of your life. ";
+q[209] = "God never does anything wrong.";
+q[210] = "If we doubt God’s goodness, we will pull away from Him.  Cultivate the belief that God is good.";
+q[211] = "Great hurt can lead to great closeness. ";
+q[212] = "You and yours are vulnerable to attack all the days of their lives.  ";
+q[213] = "Unless anger is resolved and honor communicated, broken relationships will not be restored.";
+q[214] = "Resentment doesn’t “work”.  Resentment is exhausting and just hurts you.  Trust God.  Forgive.";
+q[215] = "Forgiveness does not equal reconciliation.  You can forgive all by yourself.";
+q[216] = "Do you know why on earth you are here on earth?  You will find out when you pray, “Not my will, but Yours be done”.";
+q[217] = "The way you pray is the way you are.";
+q[218] = "There can be no relationship without communication.  Stay close.  Pray.";
+q[219] = "Without God you will be like “everyone else”.";
+q[220] = "Is your heart far from God today?";
+q[221] = "Feel-good tolerance is “in”.  Justice and holiness are “out”.  Revealed absolutes are “out”.  Will you tell them anyway?";
+q[222] = "Hell doesn’t take a holiday.";
+q[223] = "A real hero is someone who lives a life that reminds you of Jesus.  ";
+q[224] = "Remembering to be thankful keeps us spiritually fit.  ";
+q[225] = "How do you find happiness in the face of trouble, heart-strength in the face of trial, and hope in the face of death?";
+q[226] = "Remember how He defines success.";
+q[227] = "Time is much, much more valuable than anything else we have or can obtain.  ";
+q[228] = "All you have is the present to invest in futures.";
+q[229] = "Choose to do the things you value the most.";
+q[230] = "The single most effective way to get along with people is to start praying positively for them. ";
+q[231] = "If you want to be a successful fisherman, follow Jesus:  A good fisherman prepares his nets and lines, readies the bait and is prepared to handle the catch.  Everything is prepared with care so that the fish can choose to bite. ";
+q[232] = "A good fisherman is ready for storms and is able to find the best waters and fish them at the best time. ";
+q[233] = "A good fisherman knows the habits and environment of the fish.  He’s careful not to “spook” the fish.  He’s also careful not to drive the fish away with impurities on the tackle or bait. ";
+q[234] = "A good fisherman knows that fish are attracted to light. ";
+q[235] = "A good fisherman knows you can work hard all day and catch nothing, but that never stops him from fishing again. ";
+q[236] = "God’s resources are infinite.  You will be supplied according to the generosity you show and the needs you have.";
+q[237] = "Financial fears?  Joy counters fear and there is much joy in giving. ";
+q[238] = "Do you pay first and pray later? ";
+q[239] = "Work with your “life manager” to manage your finances.  Ask Him for help, learn contentment and give to God first.";
+q[240] = "Lazarus come forth!”  When you read it, it’s history, when you hear it, it’s news!";
+q[241] = "Personal victory is good.  'Body' victory is best.  Pray for a victorious Church Body.";
+q[242] = "Make an impact for God.  Love unconditionally.  ";
+q[243] = "Too old?  Too young?  Too _______?  There is power in weakness.  It’s not your ability—it’s your availability.";
+q[244] = "Let go of fear, grasp hold of God.";
+q[245] = "It’s too easy to neglect spiritual disciplines.  We get too busy with non-essentials.  What is stealing your time or occupying your mind?";
+q[246] = "Are you going through life as a blind man?  Are you putting blinders on?  The forgiven see.";
+q[247] = "Find humility first, then the healing will come.";
+q[248] = "Luxury plus comfort does not equal contentment. ";
+q[249] = "Fear comes naturally, it is not from God.";
+q[250] = "Is there no God?  Is everything and everybody God?  Is it all just Fate?  Does anybody know, will anybody ever know?";
+q[251] = "We are different.  We’re created for worship.  How much cheering would we observe at a basketball game with the arena filled with dogs and horses?  Cheer God.";
+q[252] = "The King will return with power in His hands to heal your body forever and heal our world forever.  ";
+q[253] = "Forgiveness is the superglue of relationships.";
+q[254] = "The Spirit of God works to change your life not just your mood.  ";
+q[255] = "The Spirit of God works to bring you salvation not just a story.";
+q[256] = "The Spirit of God works to move your will not just your feelings. ";
+q[257] = "Are you a believer with your lights on?  Deal with life’s “stuff” differently.  Shine where others don’t!";
+q[258] = "Are you a believer with your lights off?  Do you fear what others think of you?  Are you ashamed of what you believe?  Do you fear being mistreated or persecuted?  Are you more comfortable in “the dark”?  ";
+q[259] = "Are your lights on and at full power?  The closer we are to Christ the more light we absorb and reflect.  ";
+q[260] = "Love is an action not a feeling.  It’s a decision, it’s not passive.   ";
+q[261] = "God gives us the power to change a life.";
+q[262] = "God gives us the power to live life.";
+q[263] = "God gives us power in weakness. ";
+q[264] = "Faith is eternal and is able to be passed on forever.";
+q[265] = "Focus on the “here and now” instead of back “then and there”.";
+q[266] = "Sin robs us of assurance. ";
+q[267] = "Whom do you feel most at home with?  Other Christians or the World?";
+q[268] = "The pilot sincerely thought he had the runway under him but that sincerity did not change the truth.";
+q[269] = "Don’t be a pretender.  You are pure in heart when you act, speak and think sincerely and rightly.   ";
+q[270] = "Release the poison of bitterness.  You can become “pure in heart” by asking God to remake your heart, review your motives and realign your priorities.";
+q[271] = "Happiness comes down to this:  Whom are you trying to please?  Whom are you asking for help?   Live to please an audience of One.  Seek help from the One source of help.";
+q[272] = "Do you want effective and meaningful worship and prayer?  Stop condemning, complaining and criticizing.  Make peace.";
+q[273] = "How to be a peacemaker: Go first. Consider the other person’s perspective. Attack the problem, not the person, (and not late in the evening—pick a time when you both can be at your best). Let the Prince of Peace control your heart. ";
+q[274] = "Relationship need mending?  Try this:  I’m sorry, I was wrong, will you forgive me.";
+q[275] = "Re-opened wounds don’t heal easily.";
+q[276] = "Submit to one another:  Respect each other’s gifts, opinions and abilities.";
+q[277] = "God’s will is not a feeling, a formula, frightening, or frustrating.  God’s will is a relationship.  God's will is the best for you.  God's will is knowable (noble and 'no bull' too). ";
+q[278] = "He is our Shepherd.  He could drive us but instead he gently leads us.";
+q[279] = "We abide through obedience. ";
+q[280] = "Pruning prepares us for a greater harvest.";
+q[281] = "What Would Jesus Ask?";
+q[282] = "Do you recognize God when you see Him or hear Him?";
+q[283] = "When we run from God we put ourselves and others at risk.  A single person has the power, by disobedience, to place a host of others in temporal or eternal jeopardy.  ";
+q[284] = "Be an extension of the arm of Christ.  Use your time and resources to the benefit of others.";
+q[285] = "Is Christ in your daytimer?";
+q[286] = "If this life is the only life that matters, you will become preoccupied with the things of this world.  The more preoccupied you are, the more insensitive you become to God and to others. ";
+q[287] = "God gave us laws to help us live optimally, but trying to obey them will not result in salvation.  Christ died needlessly if we are justified by the Law. ";
+q[288] = "What motive is there for a life of good works and purity?  Here’s one compelling answer:  Bringing others to Him.";
+q[289] = "God is making us an irresistible offer—freedom from the past.";
+q[290] = "Being justified is the opposite of being condemned.    ";
+q[291] = "God has been gracious and merciful to us.  Are we gracious and merciful to others?  Live as those who must give an account.  Live as those who have been given mercy.";
+q[292] = "Change on the inside and you’ll be able to endure an attack that comes from the outside. ";
+q[293] = "Trials say, “Do this because it’s right, never mind that it’s hard.  Temptations say, “Do this because it’s fun, never mind that it’s wrong.” ";
+q[294] = "God uses trials to deepen and develop us.  Satan uses temptations to defeat and destroy us.";
+q[295] = "Grumbling and disputing set on fire relationships.  They the burn bridges between us. ";
+q[296] = "Grumbling and disputing don’t work they just upset.  They are habit forming and turn the gripers into gripes.";
+q[297] = "Grumbling and disputing are more than emotional problems—they’re moral. ";
+q[298] = "What is the reason for the hope and joy that is in you?  ";
+q[299] = "What is the result of the trials you face with trust and faith? ";
+q[300] = "Your conduct can draw many to Him.";
+q[301] = "Suffering keeps us humble, builds our character and draws us to Him.";
+q[302] = "Valleys are going to happen.  Valleys can come suddenly.";
+q[303] = "Valleys are not forever.  Valleys have a purpose.";
+q[304] = "Build your relationships.  Be thankful for others.  ";
+q[305] = "Don’t forget we are living in enemy territory.";
+q[306] = "Build your relationships.  Pray for others.  Pray that their love for Christ will grow, that they will make “right” choices and experience the results of a life that is pleasing to God.";
+q[307] = "Build your relationships.  Serve with others.  Serve together to make a lasting impact.";
+q[308] = "Build your relationships.";
+q[308] = "Release others to God.";
+q[308] = "Trust that God is working in them.";
+q[308] = "It’s His job to “complete' them.";
+q[309] = "Build your relationships.  Become less selfish.";
+q[310] = "Build your relationships.  Love others.  Tell them that you love them.";
+q[311] = "Real satisfaction in life is not in the places we live, does not come from how well we perform, from the possessions we accumulate or the power we achieve.";
+q[312] = "The secret to satisfaction in life is Someone, not something, some quality, some experience.";
+q[313] = "Resist temptation:  ";
+q[313] = "Check what you say.  ";
+q[313] = "Check what you see.  ";
+q[313] = "Check where you go.";
+q[314] = "Resist temptation:  Don’t let your mind “take a vacation”.  Consciously depend on the power of Christ in you. ";
+q[315] = "Christ-in-you has the power to overcome every temptation you will ever face. ";
+q[316] = "Christ-in-you has the resources to meet every need you will ever have.";
+q[317] = "Christ died to take away your sins, not your mind.  Renewing the mind is not abolition of the mind.";
+q[318] = "The Bible tells us about our origin and our destiny.  ";
+q[319] = "Part of sanctification is growing your ability to explain and defend your faith.  Be ready to help others unmask their illusions and expose their delusions.   ";
+q[320] = "Love Him with all of your mind.  Thinking is not a sin.  ";
+q[321] = "Don’t just endure--prevail and triumph.  ";
+q[322] = "The world is bent on separating spirituality from the Truth.  People can be sincerely spiritual but sincerely wrong.";
+q[323] = "We do not walk in stupidity and ignorance.  We walk by faith in a mostly unseen reality.  A faith based on objective truth working in our lives.  This is not much different than the pilot who skillfully lands his airplane on a runway hidden by fog or night.  The pilot trusts his instrumentation—he has faith in it.  Though “blind”, he is not exercising “blind faith”.  ";
+q[324] = "A doubter is someone who is really trying to believe.  Be merciful.  The answers to doubting are not “just believe”, “don’t think about it”, or “have blind faith”.  Beating a heavily loaded donkey trying to climb up a mountain trail will only cause it to slow and stumble.  Lighten the load--feed and train the donkey, don’t beat the donkey.  ";
+q[325] = "Don’t hide your doubts.  They can be the door to deeper understanding and greater faith.  Seek to resolve your intellectual problems.  Isolate them and treat them.  Help each other and trust the Lord to help you master the Truth with intellectual integrity.  ";
+q[326] = "You have a choice to standout or blend into the world.  Attend to the things that matter most.  Know and act on the Truth or you will become 'worldly'.  ";
+q[327] = "Worldliness: 1.  Anything that robs us of a healthy and holy mind.   2.  When holy is odd and unholy looks 'normal' or even attractive.  Avoid worldliness, embrace godliness.";
+q[328] = "Idolatry is religion on our terms rather than His.  People of the world want a relationship that does not demand repentance.  But there is no relationship with Him without repentance. ";
+q[329] = "You have a choice.  Love pleasure or love God.  ";
+q[330] = "God is never in a hurry.  ";
+q[331] = "Tomorrow is a gift, not a given.  ";
+q[332] = "Serve Him because you love Him, not because you fear Him.  ";
+q[333] = "When life caves in around you, trust in the unalterable, unchanging, measureless love that God has for you.  Don’t measure His love by your present circumstances, or His apparent action or inaction in your lives.  ";
+q[334] = "The “wonderful life” is not here on earth, it’s the one to come.  ";
+q[335] = "The glory of God and the blessing of His people are inseparably bound together.  The death of Lazarus was perfectly consistent with the love of our Lord and absolutely necessary for the glory of God.";
+q[336] = "When is God most glorified?  All of His creative glory is trivial compared to when he reaches out to, redeems, sanctifies and then raises those who were separated from Him. ";
+q[337] = "A Christian is someone who has undergone a radical transformation which, though everywhere incomplete, is nevertheless profound.  And that transformation is from a slavery to sin to a slavery to God.  ";
+q[338] = "Grace does not grant permission to live in the flesh; it supplies power to live in the spirit.   ";
+q[339] = "Freedom from the authority of God is true slavery (slavery to sin).  Slavery to God is true freedom—freedom from sin and freedom to enjoy all the blessings of eternity. ";
+q[340] = "What have you given up in your obedience to God?  What have you received in your obedience to God?  ";
+q[341] = "The chief business of God is not to keep us comfortable.  If we are to handle the hours of pain, trouble and sorrow we must interpret our relationship to Him not in terms of our comfort, but in terms of His purpose.  ";
+q[342] = "The power of God is always subject to the purpose of God.  ";
+q[343] = "God never puts His love for us on hold.  ";
+q[344] = "We all have a death sentence but you can do something about it because He has done something about it.  ";
+q[345] = "What is the joy we should have in the midst of trouble?  It is that quiet spirit of peace and assurance within us because we know God is in this with us.  ";
+q[346] = "Trouble produces endurance.  You are getting stronger.  He is supplying you with “finishing faith”.  ";
+q[347] = "The harder life gets the more we need to understand and know the Truth:  God has a purpose in hard times and you will profit from hard times. ";
+q[348] = "When you aren’t sure what to do, do what most expresses your faith in Him.  ";
+q[349] = "All that there is in the world isn’t all there is.  ";
+q[350] = "God is your ultimate source of pleasure and your ultimate reason for hope—you can count on Him.  ";
+q[351] = "Faith makes life work.  Faith locks in on the Truth about yourself and the Truth about God.  With faith you’ll know what’s really going on when you encounter trouble.    ";
+q[352] = "Factor God in!  The most dangerous thing you can do is factor God out of your life and your dreams.  ";
+q[353] = "Be careful when you “have it all”. ";
+q[354] = "It’s hard to hear when you’re angry.  ";
+q[355] = "Are you getting what you need from the Bible or only what you want?  A right heart will get the “right stuff” from the Bible.  Don’t skew God’s Word to square with your behavior or selfish will. ";
+q[356] = "What if your thought life was projected on the “big screen” for all to see?  ";
+q[357] = "Yield from a planted seed depends on the soil it is planted in.  Does God's Word yield in your heart?  ";
+q[358] = "Is your faith just for “catastrophic coverage”?   Real faith goes beyond personal concerns and sentiment to personal involvement. Real faith costs us. Real faith produces results that please God. Real faith produces an affection that results in obedience. ";
+q[359] = "The King has absolute power and demands total obedience.  All that we say, do and think are subject to Him.  ";
+q[360] = "Lessons from 'Merry Tifton', a Christmas parable:   The real Giver and the real Gift are replaced by commercialism and fantasy stories.   The real becomes indistinguishable from the fake.   The real Gift is not received and not understood.   The “Name” becomes diluted and is renamed.   The real story is never read and is lost in the noise of celebration.   The real Gift is replaced by lives of discipline and principles, losing its power.   In time there are no ears to hear and no eyes to see.   Life (empty life) continues unaware of the Truth. ";
+q[361] = "Be a greeter at the doorway to God.  The ultimate glory of Christ is the way he greeted and treated people.  ";
+q[362] = "Christ carries the cares.  ";
+q[363] = "Favoritism is un-Christlike, ungodly and unloving.  Love those who don’t have the “style, smile and status”.  ";
+q[364] = "Living in the World or for the World will harden your heart against your brother.       ";
+q[365] = "Purity is foundational to all other godly qualities.  ";
+q[366] = "A character void of gentleness and mercy will separate the best of friends.  ";
+
+
+		var v = [];
+v[1] = "Acts 14:22...strengthening the souls of the disciples, encouraging them to continue in the faith, and saying, 'Through many tribulations we must enter the kingdom of God.' ";
+v[10] = "Zephaniah 3:17  'The LORD your God is in your midst, A victorious warrior.  He will exult over you with joy, He will be quiet in His love, He will rejoice over you with shouts of joy.    Ephesians 1:18  I pray that the eyes of your heart may be enlightened, so that you will know what is the hope of His calling, what are the riches of the glory of His inheritance in the saints.    ";
+v[100] = "Isaiah 55:7-9  Let the wicked forsake his way And the unrighteous man his thoughts; And let him return to the LORD, And He will have compassion on him, And to our God, For He will abundantly pardon.  'For My thoughts are not your thoughts, Nor are your ways My ways,' declares the LORD.  'For as the heavens are higher than the earth, So are My ways higher than your ways And My thoughts than your thoughts.";
+v[101] = "Psalm 18:28  For You light my lamp; The LORD my God illumines my darkness.    John 8:12  Then Jesus again spoke to them, saying, 'I am the Light of the world; he who follows Me will not walk in the darkness, but will have the Light of life.'    ";
+v[102] = "Philippians 2:12-13  So then, my beloved, just as you have always obeyed, not as in my presence only, but now much more in my absence, work out your salvation with fear and trembling; for it is God who is at work in you, both to will and to work for His good pleasure.";
+v[103] = "Galatians 6:9 NLT  So don't get tired of doing what is good. Don't get discouraged and give up, for we will reap a harvest of blessing at the appropriate time. ";
+v[104] = "Luke 22:40-43 NLT  There he told them, 'Pray that you will not be overcome by temptation.'  He walked away, about a stone's throw, and knelt down and prayed, 'Father, if you are willing, please take this cup of suffering away from me.  Yet I want your will, not mine.'  Then an angel from heaven appeared and strengthened him.";
+v[105] = "Philippians 1:27 NLT  Only conduct yourselves in a manner worthy of the gospel of Christ, so that whether I come and see you or remain absent, I will hear of you that you are standing firm in one spirit, with one mind striving together for the faith of the gospel.";
+v[106] = "Philippians 2:5-7  Have this attitude in yourselves which was also in Christ Jesus, who, although He existed in the form of God, did not regard equality with God a thing to be grasped, but emptied Himself, taking the form of a bond-servant, and being made in the likeness of men.  ";
+v[107] = "Proverbs 8:1,17,22  Does not wisdom call, And understanding lift up her voice?  I love those who love me; And those who diligently seek me will find me. The LORD possessed me at the beginning of His way, Before His works of old . ";
+v[108] = "Philippians 3:14  I press on toward the goal for the prize of the upward call of God in Christ Jesus. ";
+v[109] = "Philippians 2:20-21 NLT  I have no one else like Timothy, who genuinely cares about your welfare.  All the others care only for themselves and not for what matters to Jesus Christ.  ";
+v[11] = "1 John 4:7,8  Beloved, let us love one another, for love is from God; and everyone who loves is born of God and knows God.  The one who does not love does not know God, for God is love. ";
+v[110] = "Philippians 3:12-14 NLT  I don't mean to say that I have already achieved these things or that I have already reached perfection!  But I keep working toward that day when I will finally be all that Christ Jesus saved me for and wants me to be.  No, dear brothers and sisters, I am still not all I should be, but I am focusing all my energies on this one thing:  Forgetting the past and looking forward to what lies ahead, I strain to reach the end of the race and receive the prize for which God, through Christ Jesus, is calling us up to heaven.";
+v[111] = "Philippians 4:11-12  Not that I speak from want, for I have learned to be content in whatever circumstances I am.  I know how to get along with humble means, and I also know how to live in prosperity; in any and every circumstance I have learned the secret of being filled and going hungry, both of having abundance and suffering need.  ";
+v[112] = "Psalm 19:1  The heavens are telling of the glory of God; And their expanse is declaring the work of His hands. ";
+v[113] = "Philippians 2:10-11  So that at the name of Jesus EVERY KNEE WILL BOW, of those who are in heaven and on earth and under the earth, and that every tongue will confess that Jesus Christ is Lord, to the glory of God the Father.  ";
+v[114] = "Psalm 106:24b-25  They did not believe in His word, But grumbled in their tents; They did not listen to the voice of the LORD.";
+v[115] = "Mark 11:22  And Jesus answered saying to them, 'Have faith in God.'";
+v[116] = "Luke 6:45 NLT  A good person produces good deeds from a good heart, and an evil person produces evil deeds from an evil heart.  Whatever is in your heart determines what you say.";
+v[117] = "James 3:17 NLT  But the wisdom that comes from heaven is first of all pure.  It is also peace loving, gentle at all times, and willing to yield to others.  It is full of mercy and good deeds.  It shows no partiality and is always sincere. ";
+v[118] = "2 Chronicles 34:27  Because your heart was tender and you humbled yourself before God when you heard His words against this place and against its inhabitants, and because you humbled yourself before Me, tore your clothes and wept before Me, I truly have heard you,' declares the LORD.    Ezekiel 36:26  Moreover, I will give you a new heart and put a new spirit within you; and I will remove the heart of stone from your flesh and give you a heart of flesh.    ";
+v[119] = "1 Timothy 6:14-15  I charge you in the presence of God, who gives life to all things, and of Christ Jesus, who testified the good confession before Pontius Pilate, that you keep the commandment without stain or reproach until the appearing of our Lord Jesus Christ, which He will bring about at the proper time --He who is the blessed and only Sovereign, the King of kings and Lord of lords.";
+v[12] = "Romans 6:19  I am speaking in human terms because of the weakness of your flesh.  For just as you presented your members as slaves to impurity and to lawlessness, resulting in further lawlessness, so now present your members as slaves to righteousness, resulting in sanctification. ";
+v[120] = "James 5:11  We count those blessed who endured. You have heard of the endurance of Job and have seen the outcome of the Lord's dealings, that the Lord is full of compassion and is merciful. ";
+v[121] = "2 Samuel 12:7,9a,13  Nathan then said to David, 'You are the man! Thus says the LORD God of Israel, 'It is I who anointed you king over Israel and it is I who delivered you from the hand of Saul.''  Why have you despised the word of the LORD by doing evil in His sight?  Then David said to Nathan, 'I have sinned against the LORD.' And Nathan said to David, 'The LORD also has taken away your sin; you shall not die.  ";
+v[122] = "Psalm 107:26-28  They rose up to the heavens, they went down to the depths; Their soul melted away in their misery.  They reeled and staggered like a drunken man, And were at their wits' end.  Then they cried to the LORD in their trouble, And He brought them out of their distresses.  ";
+v[123] = "Luke 21:19  By your endurance you will gain your lives.";
+v[124] = "Isaiah 40:31 NLT  But those who wait on the LORD will find new strength.  They will fly high on wings like eagles. They will run and not grow weary.  They will walk and not faint.";
+v[125] = "Ephesians 6:18 NLT  Pray at all times and on every occasion in the power of the Holy Spirit.  Stay alert and be persistent in your prayers for all Christians everywhere.";
+v[126] = "Luke 12:25-26  And which of you by worrying can add a single hour to his life's span?  If then you cannot do even a very little thing, why do you worry about other matters?'     Mathew 13:22  And the one on whom seed was sown among the thorns, this is the man who hears the word, and the worry of the world and the deceitfulness of wealth choke the word, and it becomes unfruitful.    ";
+v[127] = "Psalm 23:6  Surely goodness and lovingkindness will follow me all the days of my life, And I will dwell in the house of the LORD forever.";
+v[128] = "John 3:16  For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life. ";
+v[129] = "Isaiah 53:4-6  Surely our griefs He Himself bore, And our sorrows He carried; Yet we ourselves esteemed Him stricken, Smitten of God, and afflicted.  But He was pierced through for our transgressions, He was crushed for our iniquities; The chastening for our well-being fell upon Him, And by His scourging we are healed.  All of us like sheep have gone astray, Each of us has turned to his own way; But the LORD has caused the iniquity of us all To fall on Him.  ";
+v[13] = "Romans 15:13  Now may the God of hope fill you with all joy and peace in believing, so that you will abound in hope by the power of the Holy Spirit. ";
+v[130] = "Mathew 16:26 NLT  And how do you benefit if you gain the whole world but lose your own soul in the process?  Is anything worth more than your soul?   1 Kings 18:21a NLT  Then Elijah stood in front of them and said, 'How long are you going to waver between two opinions?  If the LORD is God, follow him!  But if Baal is God, then follow him!'   ";
+v[131] = "Romans 4:20-22  Abraham never wavered in believing God's promise. In fact, his faith grew stronger, and in this he brought glory to God.  He was absolutely convinced that God was able to do anything he promised.  And because of Abraham's faith, God declared him to be righteous.    1Ch 10:13  So Saul died for his trespass which he committed against the LORD, because of the word of the LORD which he did not keep; and also because he asked counsel of a medium, making inquiry of it.    ";
+v[132] = "Acts 7:32-33  `I AM THE GOD OF YOUR FATHERS, THE GOD OF ABRAHAM AND ISAAC AND JACOB.' Moses shook with fear and would not venture to look.  'BUT THE LORD SAID TO HIM, `TAKE OFF THE SANDALS FROM YOUR FEET, FOR THE PLACE ON WHICH YOU ARE STANDING IS HOLY GROUND.'' ";
+v[133] = "Deuteronomy 8:2  You shall remember all the way which the LORD your God has led you in the wilderness these forty years, that He might humble you, testing you, to know what was in your heart, whether you would keep His commandments or not. ";
+v[134] = "Mathew 5:14-15  You are the light of the world.  A city set on a hill cannot be hidden; nor does anyone light a lamp and put it under a basket, but on the lampstand, and it gives light to all who are in the house. ";
+v[135] = "1 Timothy 1:5  But the goal of our instruction is love from a pure heart and a good conscience and a sincere faith. ";
+v[136] = "Psalm 51:10  Create in me a clean heart, O God, And renew a steadfast spirit within me.";
+v[137] = "Isaiah 65:17-19  For behold, I create new heavens and a new earth; And the former things will not be remembered or come to mind.  But be glad and rejoice forever in what I create; For behold, I create Jerusalem for rejoicing And her people for gladness.  I will also rejoice in Jerusalem and be glad in My people; And there will no longer be heard in her The voice of weeping and the sound of crying.";
+v[138] = "Hebrews 4:12-13  For the word of God is living and active and sharper than any two-edged sword, and piercing as far as the division of soul and spirit, of both joints and marrow, and able to judge the thoughts and intentions of the heart.  And there is no creature hidden from His sight, but all things are open and laid bare to the eyes of Him with whom we have to do.  ";
+v[139] = "Galatians 5:4 NLT  For if you are trying to make yourselves right with God by keeping the law, you have been cut off from Christ!  You have fallen away from God's grace.";
+v[14] = "Philippians 2:14-15 NLT  In everything you do, stay away from complaining and arguing, so that no one can speak a word of blame against you.";
+v[140] = "Exodus 32:1  Now when the people saw that Moses delayed to come down from the mountain, the people assembled about Aaron and said to him, 'Come, make us a god who will go before us; as for this Moses, the man who brought us up from the land of Egypt, we do not know what has become of him.' ";
+v[141] = "2 Corinthians 10:3-5 NLT  We are human, but we don't wage war with human plans and methods.  We use God's mighty weapons, not mere worldly weapons, to knock down the Devil's strongholds.  With these weapons we break down every proud argument that keeps people from knowing God.";
+v[142] = "1 Timothy 4:7b-8  On the other hand, discipline yourself for the purpose of godliness; for bodily discipline is only of little profit, but godliness is profitable for all things, since it holds promise for the present life and also for the life to come.  ";
+v[143] = "Jude 10-13  But these men revile the things which they do not understand; and the things which they know by instinct, like unreasoning animals, by these things they are destroyed.  Woe to them!  For they have gone the way of Cain...These are the men who are hidden reefs in your love feasts when they feast with you without fear, caring for themselves; clouds without water, carried along by winds; autumn trees without fruit, doubly dead, uprooted; wild waves of the sea, casting up their own shame like foam; wandering stars, for whom the black darkness has been reserved forever.";
+v[144] = "2 Corinthians 4:16  Therefore we do not lose heart, but though our outer man is decaying, yet our inner man is being renewed day by day. ";
+v[145] = "Joshua 1:9  Have I not commanded you?  Be strong and courageous!  Do not tremble or be dismayed, for the LORD your God is with you wherever you go.";
+v[146] = "Isaiah 45:12  It is I who made the earth, and created man upon it.  I stretched out the heavens with My hands And I ordained all their host. ";
+v[147] = "Hebrews 12:1  Therefore, since we have so great a cloud of witnesses surrounding us, let us also lay aside every encumbrance and the sin which so easily entangles us, and let us run with endurance the race that is set before us.";
+v[148] = "John 8:31-34  So Jesus was saying to those Jews who had believed Him, 'If you continue in My word, then you are truly disciples of Mine; and you will know the truth, and the truth will make you free.'  They answered Him, 'We are Abraham's descendants and have never yet been enslaved to anyone; how is it that You say, 'You will become free'?'  Jesus answered them, 'Truly, truly, I say to you, everyone who commits sin is the slave of sin.  ";
+v[149] = "Genesis 1:27  God created man in His own image, in the image of God He created him; male and female He created them. ";
+v[15] = "Philippians 4:19  And my God will supply all your needs according to His riches in glory in Christ Jesus. ";
+v[150] = "Psalm 73:21-26  When my heart was embittered And I was pierced within, Then I was senseless and ignorant; I was like a beast before You.  Nevertheless I am continually with You; You have taken hold of my right hand. With Your counsel You will guide me, And afterward receive me to glory.  Whom have I in heaven but You?  And besides You, I desire nothing on earth.  My flesh and my heart may fail, But God is the strength of my heart and my portion forever.  ";
+v[151] = "Hebrews 9:27  And inasmuch as it is appointed for men to die once and after this comes judgment.";
+v[152] = "1 Corinthians 2:9 NLT That is what the Scriptures mean when they say, 'No eye has seen, no ear has heard, and no mind has imagined what God has prepared for those who love him.'    Ephesians 6:12  For our struggle is not against flesh and blood, but against the rulers, against the powers, against the world forces of this darkness, against the spiritual forces of wickedness in the heavenly places.    ";
+v[153] = "Psalm 73:28  But as for me, the nearness of God is my good; I have made the Lord GOD my refuge, That I may tell of all Your works. ";
+v[154] = "Acts 7:56-59 NLT  And he told them, 'Look, I see the heavens opened and the Son of Man standing in the place of honor at God's right hand!'  Then they put their hands over their ears, and drowning out his voice with their shouts, they rushed at him.  They dragged him out of the city and began to stone him.  The official witnesses took off their coats and laid them at the feet of a young man named Saul. And as they stoned him, Stephen prayed, 'Lord Jesus, receive my spirit.'";
+v[155] = "John 20:28-29  Thomas answered and said to Him, 'My Lord and my God !'  Jesus said to him, 'Because you have seen Me, have you believed?  Blessed are they who did not see, and yet believed.'  ";
+v[156] = "2 Corinthians 9:10  Now He who supplies seed to the sower and bread for food will supply and multiply your seed for sowing and increase the harvest of your righteousness.";
+v[157] = "Deuteronomy 4:24, 6:24  For the LORD your God is a consuming fire, a jealous God. So the LORD commanded us to observe all these statutes, to fear the LORD our God for our good always and for our survival...";
+v[158] = "Joshua 24:15b NLT  But as for me and my family, we will serve the LORD.";
+v[159] = "Hebrews 10:25...not forsaking our own assembling together, as is the habit of some, but encouraging one another; and all the more as you see the day drawing near. ";
+v[16] = "I Thessalonians 5:17-18  Pray without ceasing; in everything give thanks; for this is God's will for you in Christ Jesus. ";
+v[160] = "Galatians 5:22-23  But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness , faithfulness, gentleness, self-control; against such things there is no law.  ";
+v[161] = "Proverbs 15:23  A man has joy in an apt answer, And how delightful is a timely word! ";
+v[162] = "Ephesians 4:25  Therefore, laying aside falsehood, SPEAK TRUTH EACH ONE of you WITH HIS NEIGHBOR, for we are members of one another. ";
+v[163] = "James 3:8  But no one can tame the tongue; it is a restless evil and full of deadly poison. ";
+v[164] = "James 1:19  My dear brothers and sisters, be quick to listen, slow to speak, and slow to get angry. ";
+v[165] = "Proverbs 10:19  When there are many words, transgression is unavoidable, But he who restrains his lips is wise .    Proverbs 21:23  He who guards his mouth and his tongue, Guards his soul from troubles.    ";
+v[166] = "James 5:16a NLT  Confess your sins to each other and pray for each other so that you may be healed.";
+v[167] = "Romans 8:26  In the same way the Spirit also helps our weakness; for we do not know how to pray as we should, but the Spirit Himself intercedes for us with groanings too deep for words.";
+v[168] = "James 5:13a NLT  Are any among you suffering?  They should keep on praying about it.";
+v[169] = "James 5:16b NLT  The earnest prayer of a righteous person has great power and wonderful results. ";
+v[17] = "Numbers 21:9  And Moses made a bronze serpent and set it on the standard; and it came about, that if a serpent bit any man, when he looked to the bronze serpent, he lived .    John 3:14-15  As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up; so that whoever believes will in Him have eternal life.     ";
+v[170] = "Psalm 139:3  You scrutinize my path and my lying down, And are intimately acquainted with all my ways. ";
+v[171] = "Romans 8:7-8...because the mind set on the flesh is hostile toward God; for it does not subject itself to the law of God, for it is not even able to do so, and those who are in the flesh cannot please God.  ";
+v[172] = "John 4:23  But an hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth; for such people the Father seeks to be His worshipers. ";
+v[173] = "Mathew 22:37-38  And He said to him, ''YOU SHALL LOVE THE LORD YOUR GOD WITH ALL YOUR HEART, AND WITH ALL YOUR SOUL, AND WITH ALL YOUR MIND'.  This is the great and foremost commandment.'  ";
+v[174] = "Romans 12:1 NLT  And so, dear brothers and sisters, I plead with you to give your bodies to God.  Let them be a living and holy sacrifice – the kind he will accept.  When you think of what he has done for you, is this too much to ask? ";
+v[175] = "Romans 12:5 NLT...so it is with Christ's body.  We are all parts of his one body, and each of us has different work to do.  And since we are all one body in Christ, we belong to each other, and each of us needs all the others.";
+v[176] = "Romans 12:10  Be devoted to one another in brotherly love; give preference to one another in honor.";
+v[177] = "1 Peter 4:10  As each one has received a special gift, employ it in serving one another as good stewards of the manifold grace of God. ";
+v[178] = "James 5:11  We count those blessed who endured.  You have heard of the endurance of Job and have seen the outcome of the Lord's dealings, that the Lord is full of compassion and is merciful. ";
+v[179] = "James 4:8a  Draw near to God and He will draw near to you.";
+v[18] = "James 1:6  But he must ask in faith without any doubting, for the one who doubts is like the surf of the sea, driven and tossed by the wind.   Ephesians 4:14  As a result, we are no longer to be children, tossed here and there by waves and carried about by every wind of doctrine, by the trickery of men, by craftiness in deceitful scheming.    ";
+v[180] = "Luke 15:18  I will get up and go to my father, and will say to him, 'Father, I have sinned against heaven, and in your sight.'   Isaiah 29:13 NLT And so the Lord says, 'These people say they are mine.  They honor me with their lips, but their hearts are far away.  And their worship of me amounts to nothing more than human laws learned by rote.   ";
+v[181] = "Isaiah 44:9 NLT  How foolish are those who manufacture idols to be their gods. These highly valued objects are really worthless.  They themselves are witnesses that this is so, for their idols neither see nor know.  No wonder those who worship them are put to shame. ";
+v[182] = "Hebrews 4:15-16  For we do not have a high priest who cannot sympathize with our weaknesses, but One who has been tempted in all things as we are, yet without sin.  Therefore let us draw near with confidence to the throne of grace, so that we may receive mercy and find grace to help in time of need.";
+v[183] = "Galatians 5:1  It was for freedom that Christ set us free; therefore keep standing firm and do not be subject again to a yoke of slavery. ";
+v[184] = "Galatians 5:16  But I say, walk by the Spirit, and you will not carry out the desire of the flesh. ";
+v[185] = "2 Peter 1:2  Grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord.";
+v[186] = "Luke 12:48  From everyone who has been given much, much will be required; and to whom they entrusted much, of him they will ask all the more.    Romans 5:8  But God demonstrates His own love toward us, in that while we were yet sinners, Christ died for us.    ";
+v[187] = "Ephesians 2:8-9  For by grace you have been saved through faith; and that not of yourselves, it is the gift of God; not as a result of works, so that no one may boast. ";
+v[188] = "Ecclesiastes 5:10  He who loves money will not be satisfied with money, nor he who loves abundance with its income.  This too is vanity. ";
+v[189] = "1 John 3:2-3  Beloved, now we are children of God, and it has not appeared as yet what we will be.  We know that when He appears, we will be like Him, because we will see Him just as He is.  And everyone who has this hope fixed on Him purifies himself, just as He is pure. ";
+v[19] = "1 Corinthians 6:12, 10:23  All things are lawful for me, but not all things are profitable.  All things are lawful for me, but I will not be mastered by anything.  All things are lawful, but not all things are profitable.  All things are lawful, but not all things edify.    Galatians 6:7  Do not be deceived, God is not mocked; for whatever a man sows, this he will also reap.   ";
+v[190] = "Hebrews 2:14-15 NLT  Because God's children are human beings – made of flesh and blood – Jesus also became flesh and blood by being born in human form.  For only as a human being could he die, and only by dying could he break the power of the Devil, who had the power of death.  Only in this way could he deliver those who have lived all their lives as slaves to the fear of dying. ";
+v[191] = "1 Peter 1:13  Therefore, prepare your minds for action, keep sober in spirit, fix your hope completely on the grace to be brought to you at the revelation of Jesus Christ. ";
+v[192] = "Mark 2:5  And Jesus seeing their faith said to the paralytic, 'Son, your sins are forgiven.' ";
+v[193] = "Mathew 10:28  Do not fear those who kill the body but are unable to kill the soul; but rather fear Him who is able to destroy both soul and body in hell. ";
+v[194] = "Ephesians 1:7  In Him we have redemption through His blood, the forgiveness of our trespasses, according to the riches of His grace.   Acts 20:24 NLT  But my life is worth nothing unless I use it for doing the work assigned me by the Lord Jesus – the work of telling others the Good News about God's wonderful kindness and love.    ";
+v[195] = "John 20:31...but these have been written so that you may believe that Jesus is the Christ, the Son of God; and that believing you may have life in His name. ";
+v[196] = "1 Corinthians 12:18-21 NLT  But God made our bodies with many parts, and he has put each part just where he wants it.  What a strange thing a body would be if it had only one part!  Yes, there are many parts, but only one body.  The eye can never say to the hand, 'I don't need you.'  The head can't say to the feet, 'I don't need you.' ";
+v[197] = "Psalm 51:2  Wash me thoroughly from my iniquity And cleanse me from my sin .    Rom 8:13b...for if you are living according to the flesh, you must die; but if by the Spirit you are putting to death the deeds of the body, you will live.    Rom 8:13b...for if you are living according to the flesh, you must die; but if by the Spirit you are putting to death the deeds of the body, you will live.    Eph 5:18b  And do not get drunk with wine, for that is dissipation, but be filled with the Spirit.";
+v[198] = "Colossians 3:5  Therefore consider the members of your earthly body as dead to immorality, impurity, passion, evil desire, and greed, which amounts to idolatry. ";
+v[199] = "Ephesians 4:32  Be kind to one another, tender-hearted, forgiving each other, just as God in Christ also has forgiven you. ";
+v[2] = "1 Corinthians 15:53-55  For this perishable must put on the imperishable, and this mortal must put on immortality.  But when this perishable will have put on the imperishable, and this mortal will have put on immortality, then will come about the saying that is written, 'DEATH IS SWALLOWED UP in victory.  ";
+v[20] = "Proverbs 6:26-27  For on account of a harlot one is reduced to a loaf of bread, and an adulteress hunts for the precious life.  Can a man take fire in his bosom And his clothes not be burned? ";
+v[200] = "Psalm 19:7-11  The law of the LORD is perfect, restoring the soul; The testimony of the LORD is sure, making wise the simple.  The precepts of the LORD are right, rejoicing the heart; The commandment of the LORD is pure, enlightening the eyes.  The fear of the LORD is clean, enduring forever; The judgments of the LORD are true; they are righteous altogether.  They are more desirable than gold, yes, than much fine gold; Sweeter also than honey and the drippings of the honeycomb.  Moreover, by them Your servant is warned; In keeping them there is great reward.  ";
+v[201] = "1 Peter 2:5  You also, as living stones, are being built up as a spiritual house for a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. ";
+v[202] = "2 Peter 3:9  The Lord is not slow about His promise, as some count slowness, but is patient toward you, not wishing for any to perish but for all to come to repentance.    Romans 8:1  Therefore there is now no condemnation for those who are in Christ Jesus.    ";
+v[203] = "Proverbs 18:21  Death and life are in the power of the tongue, And those who love it will eat its fruit. ";
+v[204] = "Romans 8:18-21  For I consider that the sufferings of this present time are not worthy to be compared with the glory that is to be revealed to us.  For the anxious longing of the creation waits eagerly for the revealing of the sons of God.  For the creation was subjected to futility, not willingly, but because of Him who subjected it, in hope that the creation itself also will be set free from its slavery to corruption into the freedom of the glory of the children of God.  ";
+v[205] = "Deuteronomy 8:1-3  All the commandments that I am commanding you today you shall be careful to do, that you may live and multiply, and go in and possess the land which the LORD swore to give to your forefathers.  You shall remember all the way which the LORD your God has led you in the wilderness these forty years, that He might humble you, testing you, to know what was in your heart, whether you would keep His commandments or not.  He humbled you and let you be hungry, and fed you with manna which you did not know, nor did your fathers know, that He might make you understand that man does not live by bread alone, but man lives by everything that proceeds out of the mouth of the LORD.  ";
+v[206] = "2 Chronicles 7:14...and My people who are called by My name humble themselves and pray and seek My face and turn from their wicked ways, then I will hear from heaven, will forgive their sin and will heal their land. ";
+v[207] = "Romans 14:17...for the kingdom of God is not eating and drinking, but righteousness and peace and joy in the Holy Spirit. ";
+v[208] = "Psalm 31:19 NLT  Your goodness is so great! You have stored up great blessings for those who honor you.  You have done so much for those who come to you for protection, blessing them before the watching world. ";
+v[209] = "Romans 8:28  And we know that God causes all things to work together for good to those who love God, to those who are called according to His purpose. ";
+v[21] = "James 1:14-16  But each one is tempted when he is carried away and enticed by his own lust. Then when lust has conceived, it gives birth to sin; and when sin is accomplished, it brings forth death.  Do not be deceived, my beloved brethren.  ";
+v[210] = "Psalm 27:13-14  I would have despaired unless I had believed that I would see the goodness of the LORD In the land of the living.  Wait for the LORD; Be strong and let your heart take courage; Yes, wait for the LORD.  ";
+v[211] = "Psalm 27:10 NLT  Even if my father and mother abandon me, the LORD will hold me close. ";
+v[212] = "I Thessalonians 5:17 NLT  Keep on praying. ";
+v[213] = "Mathew 22:39...YOU SHALL LOVE YOUR NEIGHBOR AS YOURSELF.   Ephesians 4:29  Let no unwholesome word proceed from your mouth, but only such a word as is good for edification according to the need of the moment, so that it will give grace to those who hear.    ";
+v[214] = "Mathew 6:12 NLT...and forgive us our sins, just as we have forgiven those who have sinned against us. ";
+v[215] = "Luke 6:27 NLT  But if you are willing to listen, I say, love your enemies.  Do good to those who hate you. ";
+v[216] = "Luke 22:42  Father, if You are willing, remove this cup from Me; yet not My will, but Yours be done. ";
+v[217] = "Mathew 6:9-15 Pray, then, in this way:    Our Father who is in heaven, Hallowed be Your name.   'Your kingdom come. Your will be done, On earth as it is in heaven.   'Give us this day our daily bread.   'And forgive us our debts, as we also have forgiven our debtors.   'And do not lead us into temptation, but deliver us from evil.  For Yours is the kingdom and the power and the glory forever.  Amen.'   For if you forgive others for their transgressions, your heavenly Father will also forgive you.   But if you do not forgive others, then your Father will not forgive your transgressions.    ";
+v[218] = "John 15:4 NLT Remain in me, and I will remain in you.  For a branch cannot produce fruit if it is severed from the vine, and you cannot be fruitful apart from me.";
+v[219] = "Job 8:11-13  Can the papyrus grow up without a marsh?  Can the rushes grow without water?  While it is still green and not cut down, Yet it withers before any other plant.  So are the paths of all who forget God; And the hope of the godless will perish.    Proverbs 11:9  With his mouth the godless man destroys his neighbor, But through knowledge the righteous will be delivered.    ";
+v[22] = "James 2:18  But someone may well say, 'You have faith and I have works; show me your faith without the works, and I will show you my faith by my works.' ";
+v[220] = "Genesis 5:23-24 NLT  Enoch lived 365 years in all.  He enjoyed a close relationship with God throughout his life.    Luke 15:10  In the same way, I tell you, there is joy in the presence of the angels of God over one sinner who repents.   ";
+v[221] = "2 Thessalonians 1:8-9...dealing out retribution to those who do not know God and to those who do not obey the gospel of our Lord Jesus.  These will pay the penalty of eternal destruction, away from the presence of the Lord and from the glory of His power.";
+v[222] = "Mathew 7:13 NLT  You can enter God's Kingdom only through the narrow gate.  The highway to hell is broad, and its gate is wide for the many who choose the easy way.";
+v[223] = "Ephesians 5:2a NLT  Live a life filled with love for others, following the example of Christ, who loved you and gave himself as a sacrifice to take away your sins. ";
+v[224] = "Psalm 106:1-2 NLT  Praise the LORD!  Give thanks to the LORD, for he is good!  His faithful love endures forever.  Who can list the glorious miracles of the LORD?  Who can ever praise him half enough?  ";
+v[225] = "Philippians 1:21  For to me, to live is Christ and to die is gain. ";
+v[226] = "Romans 8:29 NLT  For God knew his people in advance, and he chose them to become like his Son, so that his Son would be the firstborn, with many brothers and sisters. ";
+v[227] = "Ephesians 5:15-16  Therefore be careful how you walk, not as unwise men but as wise, making the most of your time, because the days are evil.  ";
+v[228] = "John 9:4  We must work the works of Him who sent Me as long as it is day; night is coming when no one can work .'";
+v[229] = "Joshua 24:15a  If it is disagreeable in your sight to serve the LORD, choose for yourselves today whom you will serve.   Deuteronomy 30:19  I call heaven and earth to witness against you today, that I have set before you life and death, the blessing and the curse.  So choose life in order that you may live, you and your descendants.   ";
+v[23] = "1 John 2:15-17  Do not love the world nor the things in the world.  If anyone loves the world, the love of the Father is not in him.  For all that is in the world, the lust of the flesh and the lust of the eyes and the boastful pride of life, is not from the Father, but is from the world.  The world is passing away, and also its lusts; but the one who does the will of God lives forever.  ";
+v[230] = "Ephesians 1:15-16  For this reason I too, having heard of the faith in the Lord Jesus which exists among you and your love for all the saints, do not cease giving thanks for you, while making mention of you in my prayers.  ";
+v[231] = "Mathew 4:19  And He said to them, 'Follow Me, and I will make you fishers of men.' ";
+v[232] = "Mathew 4:19  And He said to them, 'Follow Me, and I will make you fishers of men.'    Mathew 16:3  And in the morning, 'There will be a storm today, for the sky is red and threatening.' Do you know how to discern the appearance of the sky, but cannot discern the signs of the times?    ";
+v[233] = "Mathew 4:19  And He said to them, 'Follow Me, and I will make you fishers of men.'    2 Corinthians 5:20a  Therefore, we are ambassadors for Christ, as though God were making an appeal through us.   ";
+v[234] = "Mathew 4:19  And He said to them, 'Follow Me, and I will make you fishers of men.'    Romans 13:12 NLT  The night is almost gone; the day of salvation will soon be here.  So don't live in darkness.  Get rid of your evil deeds.  Shed them like dirty clothes.  Clothe yourselves with the armor of right living, as those who live in the light.    ";
+v[235] = "Mathew 4:19  And He said to them, 'Follow Me, and I will make you fishers of men.'   Luke 5:5-6  Simon answered and said, 'Master, we worked hard all night and caught nothing, but I will do as You say and let down the nets.'  When they had done this, they enclosed a great quantity of fish, and their nets began to break.    ";
+v[236] = "Luke 6:38  Give, and it will be given to you. They will pour into your lap a good measure --pressed down, shaken together, and running over.  For by your standard of measure it will be measured to you in return.   Proverbs 11:25  The generous man will be prosperous, And he who waters will himself be watered.    ";
+v[236] = "Proverbs 11:25  The generous man will be prosperous, And he who waters will himself be watered. ";
+v[237] = "Proverbs 10:22  It is the blessing of the LORD that makes rich, And He adds no sorrow to it.    2 Corinthians 9:7-8  Each one must do just as he has purposed in his heart, not grudgingly or under compulsion, for God loves a cheerful giver.  And God is able to make all grace abound to you, so that always having all sufficiency in everything, you may have an abundance for every good deed.     ";
+v[238] = "Philippians 4:6  Be anxious for nothing, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. ";
+v[239] = "Mathew 6:33  But seek first His kingdom and His righteousness, and all these things will be added to you. ";
+v[24] = "Luke 8:14  'The seed which fell among the thorns, these are the ones who have heard, and as they go on their way they are choked with worries and riches and pleasures of this life, and bring no fruit to maturity. ";
+v[240] = "John 12:17  So the people, who were with Him when He called Lazarus out of the tomb and raised him from the dead, continued to testify about Him. ";
+v[241] = "1 Corinthians 15:57  But thanks be to God, who gives us the victory through our Lord Jesus Christ. ";
+v[242] = "1 John 4:19  We love, because He first loved us.";
+v[243] = "2 Corinthians 12:10  Therefore I am well content with weaknesses, with insults, with distresses, with persecutions, with difficulties, for Christ's sake; for when I am weak, then I am strong.    Ephesians 3:20-21  Now to Him who is able to do far more abundantly beyond all that we ask or think, according to the power that works within us, to Him be the glory in the church and in Christ Jesus to all generations forever and ever. Amen.     ";
+v[244] = "1 John 4:18  There is no fear in love; but perfect love casts out fear, because fear involves punishment, and the one who fears is not perfected in love. ";
+v[245] = "Proverbs 19:27  Cease listening, my son, to discipline, And you will stray from the words of knowledge. ";
+v[246] = "Job 5:13-14 NLT  He catches those who think they are wise in their own cleverness, so that their cunning schemes are thwarted.  They grope in the daylight as though they were blind; they see no better in the daytime than at night.   Isaiah 42:18 NLT  Oh, how deaf and blind you are toward Me!  Why won't you listen?  Why do you refuse to see?    ";
+v[247] = "2 Kings 5:10-11,13-14 NLT  But Elisha sent a messenger out to him with this message: 'Go and wash yourself seven times in the Jordan River. Then your skin will be restored, and you will be healed of leprosy.'  But Naaman became angry and stalked away. 'I thought he would surely come out to meet me!' he said.  'I expected him to wave his hand over the leprosy and call on the name of the LORD his God and heal me!  But his officers tried to reason with him and said, 'Sir, if the prophet had told you to do some great thing, wouldn't you have done it?  So you should certainly obey him when he says simply to go and wash and be cured!'  So Naaman went down to the Jordan River and dipped himself seven times, as the man of God had instructed him.  And his flesh became as healthy as a young child's, and he was healed! ";
+v[248] = "1 Timothy 6:8  If we have food and covering, with these we shall be content. ";
+v[249] = "2 Timothy 1:7 NLT  For God has not given us a spirit of fear and timidity, but of power, love, and self-discipline. ";
+v[25] = "Isaiah 26:3 KJV  Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee. ";
+v[250] = "John 8:58  Jesus said to them, 'Truly, truly, I say to you, before Abraham was born, I AM.'    Colossians 1:16  For by Him all things were created, both in the heavens and on earth, visible and invisible, whether thrones or dominions or rulers or authorities --all things have been created through Him and for Him.    ";
+v[251] = "Psalm 33:8-9  Let all the earth fear the LORD; Let all the inhabitants of the world stand in awe of Him.  For He spoke, and it was done; He commanded, and it stood fast.     Psalm 145:4-6  One generation shall praise Your works to another, And shall declare Your mighty acts.  On the glorious splendor of Your majesty And on Your wonderful works, I will meditate.  Men shall speak of the power of Your awesome acts, And I will tell of Your greatness.     ";
+v[252] = "Malachi 4:2  But for you who fear My name, the sun of righteousness will rise with healing in its wings; and you will go forth and skip about like calves from the stall.   Revelation 22:2b... and the leaves of the tree (of life) were for the healing of the nations.    ";
+v[252] = "Philippians 3:20-21  For our citizenship is in heaven, from which also we eagerly wait for a Savior, the Lord Jesus Christ; who will transform the body of our humble state into conformity with the body of His glory, by the exertion of the power that He has even to subject all things to Himself.     Malachi 4:2  But for you who fear My name, the sun of righteousness will rise with healing in its wings; and you will go forth and skip about like calves from the stall.   Malachi 4:2  But for you who fear My name, the sun of righteousness will rise with healing in its wings; and you will go forth and skip about like calves from the stall.   Revelation 22:2b... and the leaves of the tree (of life) were for the healing of the nations. ";
+v[253] = "Colossians 3:13...bearing with one another, and forgiving each other, whoever has a complaint against anyone; just as the Lord forgave you, so also should you. ";
+v[254] = "John 6:63  It is the Spirit who gives life; the flesh profits nothing; the words that I have spoken to you are spirit and are life.";
+v[255] = "Ephesians 1:13 NLT  And now you also have heard the truth, the Good News that God saves you.  And when you believed in Christ, he identified you as his own by giving you the Holy Spirit, whom he promised long ago. ";
+v[256] = "Psalm 143:10  Teach me to do Your will, For You are my God; Let Your good Spirit lead me on level ground. ";
+v[257] = "Isaiah 42:6  I am the LORD, I have called you in righteousness, I will also hold you by the hand and watch over you, And I will appoint you as a covenant to the people, As a light to the nations.   Romans 2:19...and are confident that you yourself are a guide to the blind, a light to those who are in darkness.   ";
+v[258] = "Romans 1:16  For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.    Romans 6:21  Therefore what benefit were you then deriving from the things of which you are now ashamed?  For the outcome of those things is death.    ";
+v[259] = "2 Corinthians 4:6  For God, who said, 'Light shall shine out of darkness,' is the One who has shone in our hearts to give the Light of the knowledge of the glory of God in the face of Christ. ";
+v[26] = "Mathew 10:28  'Do not fear those who kill the body but are unable to kill the soul; but rather fear Him who is able to destroy both soul and body in hell.    Psalm 49:15  But God will redeem my soul from the power of Sheol, For He will receive me. Selah.    ";
+v[260] = "Mark 12:30-31  ''AND YOU SHALL LOVE THE LORD YOUR GOD WITH ALL YOUR HEART, AND WITH ALL YOUR SOUL, AND WITH ALL YOUR MIND, AND WITH ALL YOUR STRENGTH.'  The second is this, 'YOU SHALL LOVE YOUR NEIGHBOR AS YOURSELF.' There is no other commandment greater than these.' ";
+v[261] = "1 Corinthians 2:4-5...and my message and my preaching were not in persuasive words of wisdom, but in demonstration of the Spirit and of power, so that your faith would not rest on the wisdom of men, but on the power of God. ";
+v[262] = "John 10:10  The thief comes only to steal and kill and destroy; I came that they may have life, and have it abundantly.";
+v[263] = "2 Corinthians 12:9   And He has said to me, 'My grace is sufficient for you, for power is perfected in weakness.' Most gladly, therefore, I will rather boast about my weaknesses, so that the power of Christ may dwell in me.  ";
+v[264] = "Hebrews 11:4 NLT  It was by faith that Abel brought a more acceptable offering to God than Cain did. God accepted Abel's offering to show that he was a righteous man. And although Abel is long dead, he still speaks to us because of his faith.";
+v[265] = "Mathew 18:21-22  Then Peter came and said to Him, 'Lord, how often shall my brother sin against me and I forgive him?  Up to seven times ?'  Jesus said to him, 'I do not say to you, up to seven times, but up to seventy times seven.  ";
+v[266] = "1 John 3:24 NLT  Those who obey God's commandments live in fellowship with him, and he with them.  And we know he lives in us because the Holy Spirit lives in us.   1 Thessalonians 5:19  Do not quench the Spirit.   ";
+v[267] = "James 4:4  You adulteresses, do you not know that friendship with the world is hostility toward God?  Therefore whoever wishes to be a friend of the world makes himself an enemy of God. ";
+v[268] = "Proverbs 16:25  There is a way which seems right to a man, But its end is the way of death. ";
+v[269] = "Psalm 24:3-4 NLT  Who may climb the mountain of the LORD?  Who may stand in his holy place?  Only those whose hands and hearts are pure, who do not worship idols and never tell lies.";
+v[27] = "John 15:13  'Greater love has no one than this, that one lay down his life for his friends.    Mathew 16:25  'For whoever wishes to save his life will lose it; but whoever loses his life for My sake will find it.    Mathew 16:25  'For whoever wishes to save his life will lose it; but whoever loses his life for My sake will find it.    Mark 10:45  'For even the Son of Man did not come to be served, but to serve, and to give His life a ransom for many.'";
+v[270] = "Acts 8:21-23 NLT  You can have no part in this, for your heart is not right before God.  Turn from your wickedness and pray to the Lord.  Perhaps he will forgive your evil thoughts, for I can see that you are full of bitterness and held captive by sin.' ";
+v[271] = "Exodus 20:3  You shall have no other gods before Me.";
+v[272] = "1 John 4:20  If someone says, 'I love God,' and hates his brother, he is a liar; for the one who does not love his brother whom he has seen, cannot love God whom he has not seen. ";
+v[273] = "Colossians 3:15 NLT  And let the peace that comes from Christ rule in your hearts.  For as members of one body you are all called to live in peace.  And always be thankful.   Ephesians 4:26  BE ANGRY, AND yet DO NOT SIN; do not let the sun go down on your anger.   ";
+v[273] = "Romans 12:18  If possible, so far as it depends on you, be at peace with all men.    Colossians 3:15 NLT  And let the peace that comes from Christ rule in your hearts.  For as members of one body you are all called to live in peace.  And always be thankful.   Colossians 3:15 NLT  And let the peace that comes from Christ rule in your hearts.  For as members of one body you are all called to live in peace.  And always be thankful.   Ephesians 4:26  BE ANGRY, AND yet DO NOT SIN; do not let the sun go down on your anger.";
+v[274] = "Mathew 5:9 NLT God blesses those who work for peace, for they will be called the children of God.   Relationship need mending?  Try this:  I’m sorry, I was wrong, will you forgive me.   ";
+v[275] = "Proverbs 16:32  It is better to be patient than powerful; it is better to have self-control than to conquer a city.";
+v[276] = "Ephesians 5:21 NLT  And further, you will submit to one another out of reverence for Christ. ";
+v[277] = "John 15:15  No longer do I call you slaves, for the slave does not know what his master is doing; but I have called you friends, for all things that I have heard from My Father I have made known to you. ";
+v[278] = "Psalm 23:1-2 NLT   The LORD is my shepherd; I have everything I need.  He lets me rest in green meadows; he leads me beside peaceful streams.   John 10:27  My sheep hear My voice, and I know them, and they follow Me.   ";
+v[279] = "John 15:10  If you keep My commandments, you will abide in My love; just as I have kept My Father's commandments and abide in His love.";
+v[28] = "Ephesians 4:31  Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.    Hebrews 12:15  See to it that no one comes short of the grace of God; that no root of bitterness springing up causes trouble, and by it many be defiled;    Hebrews 12:15  See to it that no one comes short of the grace of God; that no root of bitterness springing up causes trouble, and by it many be defiled;    Proverbs 12:18  There is one who speaks rashly like the thrusts of a sword, But the tongue of the wise brings healing. ";
+v[280] = "John 15:2  Every branch in Me that does not bear fruit, He takes away; and every branch that bears fruit, He prunes it so that it may bear more fruit.";
+v[281] = "John 15:7-8  If you abide in Me, and My words abide in you, ask whatever you wish, and it will be done for you.  My Father is glorified by this, that you bear much fruit, and so prove to be My disciples. ";
+v[282] = "Hebrews 4:7b  TODAY IF YOU HEAR HIS VOICE, DO NOT HARDEN YOUR HEARTS.";
+v[283] = "Mathew 18:6...but whoever causes one of these little ones who believe in Me to stumble, it would be better for him to have a heavy millstone hung around his neck, and to be drowned in the depth of the sea. ";
+v[284] = "Ephesians 4:11-12  And He gave some as apostles, and some as prophets, and some as evangelists, and some as pastors and teachers, for the equipping of the saints for the work of service, to the building up of the body of Christ.";
+v[285] = "John 10:14  I am the good shepherd, and I know My own and My own know Me.";
+v[286] = "1 Timothy 6:17-19  Instruct those who are rich in this present world not to be conceited or to fix their hope on the uncertainty of riches, but on God, who richly supplies us with all things to enjoy.  Instruct them to do good, to be rich in good works, to be generous and ready to share, storing up for themselves the treasure of a good foundation for the future, so that they may take hold of that which is life indeed. ";
+v[287] = "Romans 8:3  For what the Law could not do, weak as it was through the flesh, God did:  sending His own Son in the likeness of sinful flesh and as an offering for sin, He condemned sin in the flesh.    Gal 2:21 NLT  I am not one of those who treats the grace of God as meaningless.  For if we could be saved by keeping the law, then there was no need for Christ to die.   ";
+v[288] = "Mathew 5:16  Let your light shine before men in such a way that they may see your good works, and glorify your Father who is in heaven.";
+v[289] = "Romans 6:4  Therefore we have been buried with Him through baptism into death, so that as Christ was raised from the dead through the glory of the Father, so we too might walk in newness of life. ";
+v[29] = "John 3:16  'For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.    1 Corinthians 1:18  For the word of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God.   ";
+v[290] = "Romans 8:1  Therefore there is now no condemnation for those who are in Christ Jesus. ";
+v[291] = "James 2:12-13  So speak and so act as those who are to be judged by the law of liberty.  For judgment will be merciless to one who has shown no mercy; mercy triumphs over judgment.  ";
+v[292] = "2 Peter 1:6 NLT  Knowing God leads to self-control.  Self-control leads to patient endurance, and patient endurance leads to godliness. ";
+v[293] = "James 1:12  Blessed is a man who perseveres under trial; for once he has been approved, he will receive the crown of life which the Lord has promised to those who love Him. ";
+v[294] = "James 1:13 NLT  And remember, no one who wants to do wrong should ever say, 'God is tempting me.' God is never tempted to do wrong, and he never tempts anyone else either.";
+v[295] = "Philippians 2:14  Do all things without grumbling or disputing.";
+v[296] = "Philippians 2:14-15 NLT  In everything you do, stay away from complaining and arguing, so that no one can speak a word of blame against you.  You are to live clean, innocent lives as children of God in a dark world full of crooked and perverse people.  Let your lives shine brightly before them. ";
+v[297] = "1 Corinthians 10:10-12 NLT  And don't grumble as some of them did, for that is why God sent his angel of death to destroy them.  All these events happened to them as examples for us.  They were written down to warn us, who live at the time when this age is drawing to a close.  If you think you are standing strong, be careful, for you, too, may fall into the same sin.";
+v[298] = "1 Peter 1:4-6 NLT  For God has reserved a priceless inheritance for his children.  It is kept in heaven for you, pure and undefiled, beyond the reach of change and decay.  And God, in his mighty power, will protect you until you receive this salvation, because you are trusting him.  It will be revealed on the last day for all to see.  So be truly glad!  There is wonderful joy ahead, even though it is necessary for you to endure many trials for a while.";
+v[299] = "1 Peter 1:7-9 NLT  These trials are only to test your faith, to show that it is strong and pure.  It is being tested as fire tests and purifies gold – and your faith is far more precious to God than mere gold.  So if your faith remains strong after being tried by fiery trials, it will bring you much praise and glory and honor on the day when Jesus Christ is revealed to the whole world.  You love him even though you have never seen him.  Though you do not see him, you trust him; and even now you are happy with a glorious, inexpressible joy.  Your reward for trusting him will be the salvation of your souls.";
+v[3] = "John 8:12  Then Jesus again spoke to them, saying, 'I am the Light of the world; he who follows Me will not walk in the darkness, but will have the Light of life.'";
+v[30] = "Psalm 23:1  The LORD is my shepherd, I shall not want. ";
+v[300] = "1 Corinthians 9:22  To the weak I became weak, that I might win the weak; I have become all things to all men, so that I may by all means save some. ";
+v[301] = "1 Peter 4:12  Beloved, do not be surprised at the fiery ordeal among you, which comes upon you for your testing, as though some strange thing were happening to you.";
+v[302] = "John 16:33  These things I have spoken to you, so that in Me you may have peace. In the world you have tribulation, but take courage; I have overcome the world.   Proverbs 3:35  Do not be afraid of sudden fear, Nor of the onslaught of the wicked when it comes.   ";
+v[303] = "2 Corinthians 4:17 NLT  For our present troubles are quite small and won't last very long.  Yet they produce for us an immeasurably great glory that will last forever!";
+v[304] = "1 Thessalonians 1:2-3  We give thanks to God always for all of you, making mention of you in our prayers; constantly bearing in mind your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ in the presence of our God and Father.  ";
+v[305] = "1 Peter 5:8  Be of sober spirit, be on the alert.  Your adversary, the devil, prowls around like a roaring lion, seeking someone to devour. ";
+v[306] = "Philippians 1:4, 9-11...always offering prayer with joy in my every prayer for you all...And this I pray, that your love may abound still more and more in real knowledge and all discernment, so that you may approve the things that are excellent, in order to be sincere and blameless until the day of Christ; having been filled with the fruit of righteousness which comes through Jesus Christ, to the glory and praise of God.";
+v[307] = "Mathew 10:45a  For even the Son of Man did not come to be served, but to serve.";
+v[308] = "2 Thessalonians 3:4-5  We have confidence in the Lord concerning you, that you are doing and will continue to do what we command.  May the Lord direct your hearts into the love of God and into the steadfastness of Christ.";
+v[309] = "Philippians 2:3-4 Do nothing from selfishness or empty conceit, but with humility of mind regard one another as more important than yourselves;  do not merely look out for your own personal interests, but also for the interests of others.  ";
+v[31] = "Romans 3:22-24 NLT  We are made right in God's sight when we trust in Jesus Christ to take away our sins.  And we all can be saved in this same way, no matter who we are or what we have done.  For all have sinned; all fall short of God's glorious standard.  Yet now God in his gracious kindness declares us not guilty.  He has done this through Christ Jesus, who has freed us by taking away our sins. ";
+v[310] = "Philippians 1:7-8 For it is only right for me to feel this way about you all, because I have you in my heart...For God is my witness, how I long for you all with the affection of Christ Jesus.  ";
+v[311] = "Psalm 42:1,2a  As the deer pants for the water brooks, So my soul pants for You, O God.  My soul thirsts for God, for the living God.   Psalm 107:9  For He has satisfied the thirsty soul, And the hungry soul He has filled with what is good .    ";
+v[312] = "Psalm 63:1,5 NLT  O God, you are my God; I earnestly search for you.  My soul thirsts for you; my whole body longs for you in this parched and weary land where there is no water.  You satisfy me more than the richest of foods.  I will praise you with songs of joy.  ";
+v[313] = "Proverbs 4:24a, 25a, 27b NLT  Avoid all perverse talk; stay far from corrupt speech.  Look straight ahead, and fix your eyes on what lies before you.  Don't get sidetracked; keep your feet from following evil.";
+v[314] = "Mathew 26:41 NLT  Keep alert and pray.  Otherwise temptation will overpower you.  For though the spirit is willing enough, the body is weak!'";
+v[315] = "Colossians 1:11  May you be strengthened with all power, according to His glorious might, for all endurance and patience, with joy.   Isaiah 40:29  He gives strength to the weary, And to him who lacks might He increases power.    ";
+v[316] = "1 Corinthians 1:4-7a  I thank my God always concerning you for the grace of God which was given you in Christ Jesus, that in everything you were enriched in Him, in all speech and all knowledge, even as the testimony concerning Christ was confirmed in you, so that you are not lacking in any gift.  ";
+v[317] = "Romans 12:2  And do not be conformed to this world, but be transformed by the renewing of your mind, so that you may prove what the will of God is, that which is good and acceptable and perfect. ";
+v[318] = "Acts 17:26-27 NLT  From one man he created all the nations throughout the whole earth.  He decided beforehand which should rise and fall, and he determined their boundaries.  His purpose in all of this was that the nations should seek after God and perhaps feel their way toward him and find him – though he is not far from any one of us.  For in him we live and move and exist.";
+v[319] = "1 Peter 3:15-16 NLT...worship Christ as Lord of your life.  And if you are asked about your Christian hope, always be ready to explain it.  But you must do this in a gentle and respectful way.  Keep your conscience clear.  Then if people speak evil against you, they will be ashamed when they see what a good life you live because you belong to Christ.";
+v[32] = "James 1:22  But prove yourselves doers of the word, and not merely hearers who delude themselves. ";
+v[320] = "Mark 12:30...love the Lord your God...with all your mind…    2 Corinthians 10:5  We are destroying speculations and every lofty thing raised up against the knowledge of God, and we are taking every thought captive to the obedience of Christ.   ";
+v[321] = "1 John 5:4 NLT  For every child of God defeats this evil world by trusting Christ to give the victory.";
+v[322] = "Colossians 2:8  See to it that no one takes you captive through philosophy and empty deception, according to the tradition of men, according to the elementary principles of the world, rather than according to Christ. ";
+v[323] = "2 Corinthians 5:7...for we walk by faith, not by sight...";
+v[324] = "Mark 9:24 NLT  The father instantly replied, 'I do believe, but help me not to doubt!'";
+v[325] = "John 20:27-28  Then He said to Thomas, 'Reach here with your finger, and see My hands; and reach here your hand and put it into My side; and do not be unbelieving, but believing.'  Thomas answered and said to Him, 'My Lord and my God!'";
+v[326] = "John 8:31b-32  If you continue in My word, then you are truly disciples of Mine; and you  will know the truth, and the truth will make you free.";
+v[327] = "John 15:18-19 NLT  When the world hates you, remember it hated me before it hated you.  The world would love you if you belonged to it, but you don't.  I chose you to come out of the world, and so it hates you.";
+v[328] = "Ezek 14: 3 NLT  Son of man, these leaders have set up idols in their hearts.  They have embraced things that lead them into sin.  Why should I let them ask me anything?   Acts 3:19  Therefore repent and return, so that your sins may be wiped away, in order that times of refreshing may come from the presence of the Lord.    ";
+v[329] = "2 Timothy 3:1b-4 NLT...in the last days there will be very difficult times.  For people will love only themselves and their money.  They will be boastful and proud, scoffing at God, disobedient to their parents, and ungrateful.  They will consider nothing sacred.  They will be unloving and unforgiving; they will slander others and have no self-control; they will be cruel and have no interest in what is good.  They will betray their friends, be reckless, be puffed up with pride, and love pleasure rather than God.";
+v[33] = "Mathew 28:20b...'and lo, I am with you always, even to the end of the age.'   Psalm 139:1-5  O LORD, You have searched me and known me.  You know when I sit down and when I rise up; You understand my thought from afar.  You scrutinize my path and my lying down, And are intimately acquainted with all my ways.  Even before there is a word on my tongue, Behold, O LORD, You know it all.  You have enclosed me behind and before , And laid Your hand upon me.     ";
+v[330] = "John 11:5-6  NLT  Although Jesus loved Martha, Mary, and Lazarus, he stayed where he was for the next two days and did not go to them.";
+v[331] = "James 4:13-14 NLT  Look here, you people who say, 'Today or tomorrow we are going to a certain town and will stay there a year.  We will do business there and make a profit.'  How do you know what will happen tomorrow?  For your life is like the morning fog – it's here a little while, then it's gone.";
+v[332] = "Romans 8:15  For you have not received a spirit of slavery leading to fear again, but you have received a spirit of adoption as sons by which we cry out, 'Abba Father !' ";
+v[333] = "Exodus 15:13 NLT  With unfailing love you will lead this people whom you have ransomed.  You will guide them in your strength to the place where your holiness dwells.";
+v[334] = "Romans 8:23 NLT  And even we Christians, although we have the Holy Spirit within us as a foretaste of future glory, also groan to be released from pain and suffering.  We, too, wait anxiously for that day when God will give us our full rights as his children, including the new bodies he has promised us.";
+v[335] = "John 11:4, 14-15 NLT  But when Jesus heard about it he said, 'Lazarus's sickness will not end in death.  No, it is for the glory of God.  I, the Son of God, will receive glory from this.'...Then he told them plainly, 'Lazarus is dead.  And for your sake, I am glad I wasn't there, because this will give you another opportunity to believe in me.  Come, let's go see him.'";
+v[336] = "1 Corinthians 15:41-44 NIV  The sun has one kind of splendor, the moon another and the stars another; and star differs from star in splendor.  So will it be with the resurrection of the dead.  The body that is sown is perishable, it is raised imperishable; it is sown in dishonor, it is raised in glory; it is sown in weakness, it is raised in power; it is sown a natural body, it is raised a spiritual body.";
+v[337] = "Romans 6:22 NIV  But now that you have been set free from sin and have become slaves to God, the benefit you reap leads to holiness, and the result is eternal life.";
+v[338] = "Romans 6:1-2  What shall we say then? Are we to continue in sin so that grace may increase?  May it never be!  How shall we who died to sin still live in it?  ";
+v[339] = "Genesis 4:6-7  Then the LORD said to Cain, 'Why are you angry? And why has your countenance fallen?  If you do well, will not your countenance be lifted up?  And if you do not do well, sin is crouching at the door; and its desire is for you, but you must master it.'";
+v[34] = "Psalm 5:11  But let all who take refuge in You be glad, Let them ever sing for joy; And may You shelter them, That those who love Your name may exult in You.    Psalm 18:2  The LORD is my rock and my fortress and my deliverer, My God, my rock, in whom I take refuge; My shield and the horn of my salvation, my stronghold.    ";
+v[340] = "John 14:21 NLT  Those who obey my commandments are the ones who love me.  And because they love me, my Father will love them, and I will love them. And I will reveal myself to each one of them.";
+v[341] = "2 Corinthians 4:8-10 NLT  We are pressed on every side by troubles, but we are not crushed and broken.  We are perplexed, but we don't give up and quit.  We are hunted down, but God never abandons us. We get knocked down, but we get up again and keep going.  Through suffering, these bodies of ours constantly share in the death of Jesus so that the life of Jesus may also be seen in our bodies. ";
+v[342] = "Romans 9:17  For the Scripture says to Pharaoh, 'FOR THIS VERY PURPOSE I RAISED YOU UP, TO DEMONSTRATE MY POWER IN YOU, AND THAT MY NAME MIGHT BE PROCLAIMED THROUGHOUT THE WHOLE EARTH.'";
+v[343] = "Psalm 121:2-4 NLT  My help comes from the LORD, who made the heavens and the earth!  He will not let you stumble and fall; the one who watches over you will not sleep.  Indeed, he who watches over Israel never tires and never sleeps.";
+v[344] = "2 Corinthians 1:9...indeed, we had the sentence of death within ourselves so that we would not trust in ourselves, but in God who raises the dead.";
+v[345] = "James 1:2 NLT  Dear brothers and sisters, whenever trouble comes your way, let it be an opportunity for joy.";
+v[346] = "James 1:3-4 NLT  For when your faith is tested, your endurance has a chance to grow.  So let it grow, for when your endurance is fully developed, you will be strong in character and ready for anything.";
+v[347] = "1 Peter 1:6,7  NIV  In this you greatly rejoice, though now for a little while you may have had to suffer grief in all kinds of trials.  These have come so that your faith--of greater worth than gold, which perishes even though refined by fire--may be proved genuine and may result in praise, glory and honor when Jesus Christ is revealed.";
+v[348] = "James 1:5 NLT  If you need wisdom – if you want to know what God wants you to do – ask him, and he will gladly tell you.  He will not resent your asking.";
+v[349] = "Hebrews 11:24-27 NLT  It was by faith that Moses, when he grew up, refused to be treated as the son of Pharaoh's daughter.  He chose to share the oppression of God's people instead of enjoying the fleeting pleasures of sin.  He thought it was better to suffer for the sake of the Messiah than to own the treasures of Egypt, for he was looking ahead to the great reward that God would give him.  It was by faith that Moses left the land of Egypt.  He was not afraid of the king.  Moses kept right on going because he kept his eyes on the one who is invisible. ";
+v[35] = "Psalm 36:7  How precious is Your lovingkindness, O God!  And the children of men take refuge in the shadow of Your wings. ";
+v[350] = "James 1:17-18 NLT  Whatever is good and perfect comes to us from God above, who created all heaven's lights.  Unlike them, he never changes or casts shifting shadows.  In his goodness he chose to make us his own children by giving us his true word.  And we, out of all creation, became his choice possession.";
+v[351] = "Romans 12:12 NLT  Be glad for all God is planning for you.  Be patient in trouble, and always be prayerful.";
+v[352] = "Proverbs 3:5-7 NLT  Trust in the LORD with all your heart; do not depend on your own understanding.  Seek his will in all you do, and he will direct your paths.  Don't be impressed with your own wisdom.  Instead, fear the LORD and turn your back on evil. ";
+v[353] = "2 Chronicles 26:16a  But when he (Uzziah) became strong, his heart was so proud that he acted corruptly, and he was unfaithful to the LORD his God…";
+v[354] = "James 1:19-20   This you know, my beloved brethren.  But everyone must be quick to hear, slow to speak and slow to anger; for the anger of man does not achieve the righteousness of God.";
+v[355] = "James 1:22-25  NLT  And remember, it is a message to obey, not just to listen to.  If you don't obey, you are only fooling yourself.  For if you just listen and don't obey, it is like looking at your face in a mirror but doing nothing to improve your appearance.  You see yourself, walk away, and forget what you look like.  But if you keep looking steadily into God's perfect law – the law that sets you free – and if you do what it says and don't forget what you heard, then God will bless you for doing it.";
+v[356] = "James 1:21 NLT  So get rid of all the filth and evil in your lives, and humbly accept the message God has planted in your hearts, for it is strong enough to save your souls.";
+v[357] = "Mathew 13:23  And the one on whom seed was sown on the good soil, this is the man who hears the word and understands it; who indeed bears fruit and brings forth, some a hundredfold, some sixty, and some thirty.";
+v[358] = "James 2:14 NLT  Dear brothers and sisters, what's the use of saying you have faith if you don't prove it by your actions?  That kind of faith can't save anyone.";
+v[359] = "Revelation 15:3  And they sang the song of Moses, the bond-servant of God, and the song of the Lamb, saying, 'Great and marvelous are Your works, O Lord God, the Almighty; Righteous and true are Your ways, King of the nations!";
+v[36] = "Philippians 3:8  More than that, I count all things to be loss in view of the surpassing value of knowing Christ Jesus my Lord, for whom I have suffered the loss of all things, and count them but rubbish so that I may gain Christ.";
+v[360] = "Isaiah 9:6-7  For a child will be born to us, a son will be given to us; And the government will rest on His shoulders; And His name will be called Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace.  There will be no end to the increase of His government or of peace, On the throne of David and over his kingdom, To establish it and to uphold it with justice and righteousness From then on and forevermore.  The zeal of the LORD of hosts will accomplish this.  ";
+v[361] = "James 2:8  If, however, you are fulfilling the royal law according to the Scripture, 'YOU SHALL LOVE YOUR NEIGHBOR AS YOURSELF,' you are doing well.";
+v[362] = "Mathew 11:28-30  Come to Me, all who are weary and heavy-laden, and I will give you rest. Take My yoke upon you and learn from Me, for I am gentle and humble in heart, and YOU WILL FIND REST FOR YOUR SOULS.  For My yoke is easy and My burden is light.";
+v[363] = "James 2:1 NLT  My dear brothers and sisters, how can you claim that you have faith in our glorious Lord Jesus Christ if you favor some people more than others?";
+v[364] = "1 John 3:17  But whoever has the world's goods, and sees his brother in need and closes his heart against him, how does the love of God abide in him?";
+v[365] = "Mathew 5:8  Blessed are the pure in heart, for they shall see God.";
+v[366] = "Proverbs 17:9  He who conceals a transgression seeks love, But he who repeats a matter separates intimate friends. ";
+v[37] = "2 Chronicles 20:6  He said, 'O LORD, the God of our fathers, are You not God in the heavens?  And are You not ruler over all the kingdoms of the nations? Power and might are in Your hand so that no one can stand against You. ";
+v[38] = "Luke 22:46  He said to them, 'Why are you sleeping? Get up and pray that you may not enter into temptation.' ";
+v[39] = "1 Corinthians 10:13  No temptation has overtaken you but such as is common to man; and God is faithful, who will not allow you to be tempted beyond what you are able, but with the temptation will provide the way of escape also, so that you will be able to endure it. ";
+v[4] = "Ephesians 6:18  With all prayer and petition pray at all times in the Spirit, and with this in view, be on the alert with all perseverance and petition for all the saints.";
+v[40] = "Proverbs 7:21-23 NLT  So she seduced him with her pretty speech.  With her flattery she enticed him. He followed her at once, like an ox going to the slaughter or like a trapped stag, awaiting the arrow that would pierce its heart.  He was like a bird flying into a snare, little knowing it would cost him his life. ";
+v[41] = "Luke 8:13  'Those on the rocky soil are those who, when they hear, receive the word with joy; and these have no firm root; they believe for a while, and in time of temptation fall away. ";
+v[42] = "Jerimiah 17:9 NLT  The human heart is most deceitful and desperately wicked.  Who really knows how bad it is? ";
+v[43] = "1 Samuel 17:32  David said to Saul, 'Let no man's heart fail on account of him; your servant will go and fight with this Philistine.'";
+v[44] = "Mathew 6:21 NLT  Wherever your treasure is, there your heart and thoughts will also be.";
+v[45] = "2 Peter 1:7...and in your godliness, brotherly kindness, and in your brotherly kindness, love. ";
+v[46] = "Philippians 4:8  Finally, brethren, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is of good repute, if there is any excellence and if anything worthy of praise, dwell on these things. ";
+v[47] = "Ephesians 6:13-14b NLT  Use every piece of God's armor to resist the enemy in the time of evil, so that after the battle you will still be standing firm.  Stand your ground, putting on the sturdy belt of truth...";
+v[48] = "Mathew 5:6  Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. ";
+v[49] = "2 Corinthians 7:10 NLT  For God can use sorrow in our lives to help us turn away from sin and seek salvation.  We will never regret that kind of sorrow.  But sorrow without repentance is the kind that results in death.";
+v[5] = "Romans 12:10  Be devoted to one another in brotherly love; give preference to one another in honor;    Genesis 2:18  Then the LORD God said, 'It is not good for the man to be alone; I will make him a helper suitable for him.'    ";
+v[50] = "James 1:2-3 NLT  Dear brothers and sisters, whenever trouble comes your way, let it be an opportunity for joy.  For when your faith is tested, your endurance has a chance to grow. ";
+v[51] = "Hebrews 10:24 NLT  Think of ways to encourage one another to outbursts of love and good deeds. ";
+v[52] = "Colossians 3:12  So, as those who have been chosen of God, holy and beloved, put on a heart of compassion, kindness, humility, gentleness and patience.";
+v[53] = "Proverbs 15:4  A soothing tongue is a tree of life, But perversion in it crushes the spirit. ";
+v[54] = "1 Corinthians 3:11  For no man can lay a foundation other than the one which is laid, which is Jesus Christ. ";
+v[55] = "Isaiah 43:1-2  But now, thus says the LORD, your Creator, O Jacob, And He who formed you, O Israel, 'Do not fear, for I have redeemed you; I have called you by name; you are Mine!  When you pass through the waters, I will be with you; And through the rivers, they will not overflow you.  When you walk through the fire, you will not be scorched, Nor will the flame burn you.' ";
+v[56] = "James 4:1 NLT  What is causing the quarrels and fights among you?  Isn't it the whole army of evil desires at war within you?";
+v[57] = "Colossians 3:8  But now you also, put them all aside: anger, wrath, malice, slander, and abusive speech from your mouth. ";
+v[58] = "Philippians 2:5,8  Have this attitude in yourselves which was also in Christ Jesus...Being found in appearance as a man, He humbled Himself by becoming obedient to the point of death, even death on a cross. ";
+v[59] = "Mathew 5:5  Blessed are the gentle, for they shall inherit the earth. ";
+v[6] = "John 11:25  Jesus said to her, 'I am the resurrection and the Life; he who believes in Me will live even if he dies.'    Acts 17:25b  He Himself gives to all people Life and Breath and All things.   ";
+v[60] = "Proverbs 8:34  Blessed is the man who listens to me, Watching daily at my gates, Waiting at my doorposts. ";
+v[61] = "Mathew 7:3  Why do you look at the speck that is in your brother's eye, but do not notice the log that is in your own eye? ";
+v[62] = "Psalm 16:11  You will make known to me the path of life ; In Your presence is fullness of joy; In Your right hand there are pleasures forever. ";
+v[63] = "Romans 12:2a NLT  Don't copy the behavior and customs of this world...   Romans 8:6  For the mind set on the flesh is death, but the mind set on the Spirit is life and peace.   Romans 8:6  For the mind set on the flesh is death, but the mind set on the Spirit is life and peace.   Ephesians 6:16...in addition to all, taking up the shield of faith with which you will be able to extinguish all the flaming arrows of the evil one. ";
+v[64] = "1 John 5:13  These things I have written to you who believe in the name of the Son of God, so that you may know that you have eternal life. ";
+v[65] = "John 11:25-26a NLT  Jesus told her, 'I am the resurrection and the life.  Those who believe in me, even though they die like everyone else, will live again.  They are given eternal life for believing in me and will never perish.'  ";
+v[66] = "Hebrews 13:5  Make sure that your character is free from the love of money, being content with what you have; for He Himself has said, 'I WILL NEVER DESERT YOU, NOR WILL I EVER FORSAKE YOU.' ";
+v[67] = "1 Thessalonians 5:14  We urge you, brethren, admonish the unruly, encourage the fainthearted, help the weak, be patient with everyone.    Mathew 18:33 NLT  Shouldn't you have mercy on your fellow servant, just as I had mercy on you?   ";
+v[68] = "Proverbs 21:20 NLT  The wise have wealth and luxury, but fools spend whatever they get.   Proverbs 1:18b-19 NLT  They set an ambush for themselves; they booby-trap their own lives!  Such is the fate of all who are greedy for gain.  It ends up robbing them of life.   ";
+v[69] = "2 Corinthians 9:6  Now this I say, he who sows sparingly will also reap sparingly, and he who sows bountifully will also reap bountifully. ";
+v[7] = "Ephesians 5:8-10...for you were formerly darkness, but now you are Light in the Lord; walk as children of Light (for the fruit of the Light consists in all goodness and righteousness and truth ), trying to learn what is pleasing to the Lord.  ";
+v[70] = "Galatians 2:20  I have been crucified with Christ; and it is no longer I who live, but Christ lives in me; and the life which I now live in the flesh I live by faith in the Son of God, who loved me and gave Himself up for me. ";
+v[71] = "John 6:47-48 NLT  I assure you, anyone who believes in me already has eternal life.  Yes, I am the bread of life!   John 6:51 NLT  I am the living bread that came down out of heaven.  Anyone who eats this bread will live forever; this bread is my flesh, offered so the world may live.   ";
+v[72] = "Mathew 21:7  The disciples went and did just as Jesus had instructed them, and brought the donkey and the colt, and laid their coats on them; and He sat on the coats.   Numbers 22:30-31  The donkey said to Balaam, 'Am I not your donkey on which you have ridden all your life to this day? Have I ever been accustomed to do so to you?' And he said, 'No.'  Then the LORD opened the eyes of Balaam, and he saw the angel of the LORD standing in the way with his drawn sword in his hand; and he bowed all the way to the ground.     ";
+v[73] = "Philippians 4:13  I can do all things through Him who strengthens me.   Hebrews 11:6  And without faith it is impossible to please Him, for he who comes to God must believe that He is and that He is a rewarder of those who seek Him.    ";
+v[74] = "Philippians 4:18a,19  But I have received everything in full and have an abundance; I am amply supplied...And my God will supply all your needs according to His riches in glory in Christ Jesus.  ";
+v[75] = "Mathew 7:1-2  Do not judge so that you will not be judged.  For in the way you judge, you will be judged; and by your standard of measure, it will be measured to you. ";
+v[76] = "Micah 6:8  He has told you, O man, what is good; And what does the LORD require of you But to do justice, to love kindness, And to walk humbly with your God ? ";
+v[77] = "Hebrews 12:10b,11  He disciplines us for our good, so that we may share His holiness.  All discipline for the moment seems not to be joyful, but sorrowful; yet to those who have been trained by it, afterwards it yields the peaceful fruit of righteousness.  ";
+v[78] = "2 Timothy 2:21  Therefore, if anyone cleanses himself from these things, he will be a vessel for honor, sanctified, useful to the Master, prepared for every good work. ";
+v[79] = "Proverbs 27:2  Let another praise you, and not your own mouth; A stranger, and not your own lips.    Psalm 75:5  Do not lift up your horn on high, Do not speak with insolent pride.   ";
+v[8] = "Ephesians 4:17-23  So this I say, and affirm together with the Lord, that you walk no longer just as the Gentiles also walk, in the futility of their mind, being darkened in their understanding, excluded from the life of God because of the ignorance that is in them, because of the hardness of their heart; and they, having become callous, have given themselves over to sensuality for the practice of every kind of impurity with greediness. But you did not learn Christ in this way, if indeed you have heard Him and have been taught in Him, just as truth is in Jesus, that, in reference to your former manner of life, you lay aside the old self, which is being corrupted in accordance with the lusts of deceit, and that you be renewed in the spirit of your mind.";
+v[80] = "1 Corinthians 15:58  Therefore, my beloved brethren, be steadfast, immovable, always abounding in the work of the Lord, knowing that your toil is not in vain in the Lord. ";
+v[81] = "Luke 21:36  But keep on the alert at all times, praying that you may have strength to escape all these things that are about to take place, and to stand before the Son of Man.";
+v[82] = "Exodus 14:14  The LORD will fight for you while you keep silent. ";
+v[83] = "Colossians 3:17  Whatever you do in word or deed, do all in the name of the Lord Jesus, giving thanks through Him to God the Father.    Proverbs 29:23  A man's pride will bring him low, But a humble spirit will obtain honor.    ";
+v[84] = "1 Peter 3:18  For Christ also died for sins once for all, the just for the unjust, so that He might bring us to God, having been put to death in the flesh, but made alive in the spirit.";
+v[85] = "Mathew 16:15-16  He said to them, 'But who do you say that I am?'  Simon Peter answered, 'You are the Christ, the Son of the living God.'   Psalm 141:3  Set a guard, O LORD, over my mouth; Keep watch over the door of my lips.    ";
+v[86] = "2 Timothy 3:16  All Scripture is inspired by God and profitable for teaching, for reproof , for correction, for training in righteousness.   Psalm 19:8-11  The law of the LORD is perfect, restoring the soul; The testimony of the LORD is sure, making wise the simple.  The precepts of the LORD are right, rejoicing the heart; The commandment of the LORD is pure, enlightening the eyes.  The fear of the LORD is clean, enduring forever; The judgments of the LORD are true; they are righteous altogether.  They are more desirable than gold, yes, than much fine gold; Sweeter also than honey and the drippings of the honeycomb.  Moreover, by them Your servant is warned; In keeping them there is great reward.     ";
+v[87] = "Romans 6:23  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. ";
+v[88] = "John 15:12  This is My commandment, that you love one another, just as I have loved you. ";
+v[89] = "Philippians 1:3-5  I thank my God in all my remembrance of you, always offering prayer with joy in my every prayer for you all, in view of your participation in the gospel from the first day until now.  ";
+v[9] = "Ephesians 4:31-32  Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.  Be kind to one another, tender-hearted, forgiving each other, just as God in Christ also has forgiven you.  ";
+v[90] = "Philippians 1:6  For I am confident of this very thing, that He who began a good work in you will perfect it until the day of Christ Jesus. ";
+v[91] = "1 Thessalonians 5:14b NLT  Encourage those who are timid.  Take tender care of those who are weak. Be patient with everyone. ";
+v[92] = "James 5:16 NLT  Confess your sins to each other and pray for each other so that you may be healed.  The earnest prayer of a righteous person has great power and wonderful results. ";
+v[93] = "Colossians 4:6  Let your speech always be with grace, as though seasoned with salt, so that you will know how you should respond to each person.";
+v[94] = "Acts 2:44-47  And all those who had believed were together and had all things in common; and they began selling their property and possessions and were sharing them with all, as anyone might have need.  Day by day continuing with one mind in the temple, and breaking bread from house to house, they were taking their meals together with gladness and sincerity of heart, praising God and having favor with all the people. And the Lord was adding to their number day by day those who were being saved.  ";
+v[95] = "Mathew 12:34b  For the mouth speaks out of that which fills the heart.   Proverbs 4:23  Watch over your heart with all diligence, for from it flow the springs of life.    ";
+v[96] = "Psalm 7:10  God is my shield, saving those whose hearts are true and right. ";
+v[97] = "1 Timothy 6:11-12 NIV  But you, man of God, flee from all this, and pursue righteousness, godliness, faith, love, endurance and gentleness.  Fight the good fight of the faith.  Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses. ";
+v[98] = "2 Corinthians 5:17  Therefore if anyone is in Christ, he is a new creature; the old things passed away; behold, new things have come. ";
+v[99] = "Ephesians 4:22-25...that, in reference to your former manner of life, you lay aside the old self, which is being corrupted in accordance with the lusts of deceit, and that you be renewed in the spirit of your mind, and put on the new self, which in the likeness of God has been created in righteousness and holiness of the truth.  Therefore, laying aside falsehood, SPEAK TRUTH EACH ONE of you WITH HIS NEIGHBOR, for we are members of one another.  ";
+
+var ret = "\r\n"
+
+function renderQuote() {
+
+
+//		var rand = Math.floor(Math.random()*366) + 1
+
+//		var rand = 143
+
+var rand = parseInt (document . apple . banana . value);
+	if (isNaN (rand) || rand > 366 || rand <= 0)
+		var rand = Math.floor(Math.random()*366) + 1;
+
+ 
+
+	var myquote = document.getElementById('quoteDisplay');
+	myquote.innerText = q[rand] + ret + ret + ret + v[rand] + ret + ret + "#" + rand;
+
+x=367;
+
+}
+
+	renderQuote();
+
+
+
+function lookforit()
+{
+//	alert(x)
+	var ret = "\r\n";
+	var intext = (document . searchq . searchtext . value);
+//	alert(intext);
+
+	for (i=1;i<x;i++) 
+//	var test = q[i];
+//	alert(i);
+		{ 
+
+			var c = q[i].indexOf(intext)
+			var b = v[i].indexOf(intext)
+
+//			if (c >= 0) alert("Quote#: "+i+"\nQuote String Location: "+c)
+//			if (b >= 0) alert("Quote#: "+i+"\nVerse String Location: "+b)
+			if (c >= 0 || b >= 0) 
+				{ 
+			var rand = i			
+			var myquote = document.getElementById('quoteDisplay');
+			myquote.innerText = q[rand] + ret + ret + ret + v[rand] + ret + ret + "#" + rand;       						 			
+				}
+
+		 
+			
+
+
+
+		}
+		
+x = rand;  
+
+				 
+} 
+
+
+</script>
+
+<!--<style>button {font-size: 36pt;} </style>
+<button onclick="renderQuote()">Update Quote</button>
+-->
+
+
+</body>
+
+
+</html>
+
+
+
+<html>
+<head></head>
+
+<body>
+
+ 
+
+
+<script type="text/javascript">
+
+	var a = document.createElement('a');
+ 
+	a.title = "<font size=1>Scripture quotations taken from the NASB unless otherwise noted</font>";
+	a.innerHTML = a.title;
+
+	a.href = "http://www.lockman.org";
+	document.body.appendChild(a);
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>
